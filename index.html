@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <script src="script.js"></script>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kabir Virk — Personal Portfolio</title>
+</head>
+<body>
+  <div class="wrap flow-nudge">
+    <header>
+      <div class="brand">
+        <span class="logo">Kabir Virk</span>
+        <span class="logo-sub">PROJECTS • SKILLS • PERSONAL</span>
+      </div>
+      <nav aria-label="Primary">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#personal">Personal</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-copy flow-nudge-alt">
+        <p class="school-line">University of Waterloo — Electrical Engineering (Co-op)</p>
+        <h1>
+          Kabir<br />Virk
+          <span class="sigil" aria-hidden="true">ᚠ ᛃ ᚱ</span> <!-- These runes are a cool thing ive seen on other websites,
+          usually japenase lettering so i thought to use these ones -->
+        </h1>
+        <p class="quote">“Build it. Measure it. Explain it.”</p>
+        <p class="lede">
+          Same first-screen energy. You’ll replace this with your actual focus (power, sensors, embedded, bring-up).
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact Me</a>
+          <a class="btn" href="#">Résumé (PDF)</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo" role="img" aria-label="Hero image placeholder">
+          Placeholder Hero Image
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section id="about">
+        <div class="section-head">
+          <span class="sec-mark" aria-hidden="true">ᚨ</span>
+          <h2>About</h2>
+          <span class="section-tag">TRACE</span>
+        </div>
+        <p class="prose offset-1">
+          Placeholder about copy.
+        </p>
+        <p class="prose offset-2 narrow">
+         Placeholder about copy.
+        </p>
+      </section>
+
+      <section id="education">
+        <div class="section-head">
+          <span class="sec-mark" aria-hidden="true">ᛟ</span>
+          <h2>Education</h2>
+          <span class="section-tag">FIELD</span>
+        </div>
+        <div class="offset-1" style="max-width: 56rem;">
+          <article class="card">
+            <h3>University of Waterloo</h3>
+            <div class="meta-row">
+              <span>Waterloo, ON</span>
+              <span class="pill">BASc, Electrical Engineering (Co-op)</span>
+            </div>
+            <p class="prose">
+              Sept 2025 - Dec 2030 - Placeholder.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      
