@@ -22,6 +22,7 @@
     color: var(--text);
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
   }
 
   a { 
@@ -153,8 +154,18 @@
     font-size: clamp(1.15rem, 2.6vw, 1.55rem);
     font-style: italic;
     color: rgba(103, 232, 249, 0.9);
-    max-width: 26ch;
+    max-width: min(38ch, 100%);
     margin-left: clamp(0px, 3vw, 1.1rem);
+  }
+
+  .quote-attrib {
+    display: block;
+    margin-top: 0.35rem;
+    font-size: 0.82em;
+    font-style: normal;
+    font-weight: 520;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
   }
 
   .lede {
@@ -373,12 +384,117 @@
   
   }
 
+  /* Full-bleed projects band: breaks out of .wrap so cards use viewport width */
+  .section-projects-band {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    box-sizing: border-box;
+    padding: clamp(1.25rem, 4vw, 2.25rem) clamp(1rem, 5vw, 3rem) clamp(1.75rem, 5vw, 3rem);
+    background:
+      radial-gradient(ellipse 120% 80% at 50% 0%, rgba(103, 232, 249, 0.06), transparent 55%),
+      linear-gradient(180deg, rgba(20, 18, 27, 0.2), rgba(11, 10, 16, 0.65));
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .section-projects-inner {
+    width: 100%;
+    max-width: min(1600px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-projects-band .section-head {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .projects-lede {
+    max-width: 64ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .projects-grid {
+    width: 100%;
+    max-width: none;
+    margin-top: 0.35rem;
+    gap: clamp(0.85rem, 2vw, 1.25rem);
+  }
+
+  @media (min-width: 640px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1100px) {
+    .projects-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  /* Full-bleed skills band (matches Projects behavior) */
+  .section-skills-band {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    box-sizing: border-box;
+    padding: clamp(1.25rem, 4vw, 2.25rem) clamp(1rem, 5vw, 3rem) clamp(1.75rem, 5vw, 3rem);
+    background:
+      radial-gradient(ellipse 120% 80% at 50% 0%, rgba(167, 243, 208, 0.06), transparent 55%),
+      linear-gradient(180deg, rgba(20, 18, 27, 0.18), rgba(11, 10, 16, 0.62));
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .section-skills-inner {
+    width: 100%;
+    max-width: min(1600px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-skills-band .section-head {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .skills-lede {
+    max-width: 70ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .skills-grid {
+    width: 100%;
+    max-width: none;
+    gap: clamp(0.85rem, 2vw, 1.25rem);
+  }
+
+  @media (min-width: 720px) {
+    .skills-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1100px) {
+    .skills-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
   .project { 
     
     display: flex; 
     flex-direction: column; 
     gap: 0.65rem; 
   
+  }
+
+  .project .prose {
+    max-width: none;
   }
 
   .thumb {
