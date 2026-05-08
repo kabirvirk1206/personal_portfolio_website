@@ -824,3 +824,9 @@
     color: var(--text-muted);
     max-width: 54ch;
   }
+
+  @media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
