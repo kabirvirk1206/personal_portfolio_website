@@ -49,7 +49,7 @@
       </div>
       <div class="hero-visual">
         <figure class="hero-figure">
-          <div class="hero-photo hero-photo--image">
+          <div class="hero-photo hero-photo--image zoomable" role="button" tabindex="0" aria-label="View hero image larger">
             <img
               src="images/TEJ3.jpeg"
               alt="Grade 11 TEJ project—a hardware build using an Arduino microcontroller"
@@ -121,7 +121,8 @@
           <span class="section-tag">LOAD</span>
         </div>
 
-        <article class="card flow-nudge-alt" style="max-width: 60rem; margin-left: 0;">
+        <div class="experience-top">
+        <article class="card">
           <span class="pill">Electrical · Current</span>
           <h3>Waterloo Autonomous Racing Group — Electrical Team Member</h3>
           <div class="meta-row">
@@ -158,7 +159,7 @@
           </div>
         </article>
 
-        <article class="card offset-1" style="margin-top: 0.95rem; max-width: 52rem;">
+        <article class="card">
           <span class="pill">Internship</span>
           <h3>TalkToMedi — Systems Integration Intern</h3>
           <div class="meta-row">
@@ -174,8 +175,9 @@
             <li>Used Vapi to test and refine a conversational script for TalkToMedi’s AI voice agent.</li>
           </ul>
         </article>
+        </div>
 
-        <article class="card offset-2" style="margin-top: 0.95rem; max-width: 52rem;">
+        <article class="card experience-third offset-2" style="max-width: 52rem;">
           <span class="pill">Previous</span>
           <h3>Tutorax Inc. — Academic Tutor</h3>
           <div class="meta-row">
@@ -203,7 +205,7 @@
 
         <div class="grid projects-grid">
           <article class="card project">
-            <div class="thumb thumb--image">
+            <div class="thumb thumb--image zoomable" role="button" tabindex="0" aria-label="View project image larger: Dual Sensor Security System">
               <img
                 src="images/security.jpeg"
                 alt="Dual sensor security system prototype with ultrasonic and audio sensing"
@@ -231,7 +233,7 @@
           </article>
 
           <article class="card project">
-            <div class="thumb thumb--image">
+            <div class="thumb thumb--image zoomable" role="button" tabindex="0" aria-label="View project image larger: COG360">
               <img
                 src="images/Cog360.jpeg"
                 alt="COG360 reaction-time game device with rotary encoder and display"
@@ -259,7 +261,7 @@
           </article>
 
           <article class="card project">
-            <div class="thumb thumb--image">
+            <div class="thumb thumb--image zoomable" role="button" tabindex="0" aria-label="View project image larger: Arduino Radio Controlled Car">
               <img
                 src="images/Radio.jpeg"
                 alt="Arduino-based radio controlled car build"
@@ -405,6 +407,15 @@
       <p class="footer-note">Kabir Virk </p>
     </footer>
   </div>
+
+  <dialog id="photo-lightbox" class="photo-lightbox" aria-label="Expanded photo">
+    <div class="photo-lightbox-panel">
+      <button type="button" class="photo-lightbox-close" aria-label="Close">&times;</button>
+      <img class="photo-lightbox-img" src="" alt="" tabindex="-1" />
+      <p class="photo-lightbox-caption" hidden></p>
+    </div>
+  </dialog>
+
   <script src="script.js"></script>
 </body>
 </html>
