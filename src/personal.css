@@ -151,7 +151,30 @@ footer {
   color: rgba(244, 242, 249, 0.55);
 }
 
-.footer-note {
-  margin: 0;
-  font-size: 0.78rem;
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+
+.footer-left {
+  margin-right: auto;
+  color: rgba(244, 242, 249, 0.6);
+}
+
+.footer-divider {
+  width: 1px;
+  height: 1.1rem;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.footer-rune {
+  font-size: 1.05rem;
+  color: rgba(103, 232, 249, 0.9);
+  user-select: none;
 }
