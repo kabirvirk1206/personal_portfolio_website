@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kabir Virk — Personal Portfolio</title>
+  <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Kabir Virk" />
+  <link rel="manifest" href="/images/site.webmanifest" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap flow-nudge">
+    <header>
+      <div class="brand">
+        <span class="logo">Kabir Virk</span>
+        <span class="logo-sub">PROJECTS • SKILLS • PERSONAL</span>
+      </div>
+      <nav aria-label="Primary">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#personal">Personal</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-copy flow-nudge-alt">
+        <p class="school-line">University of Waterloo — Electrical Engineering (Co-op)</p>
+        <h1>
+          Kabir<br />Virk
+          <span class="sigil" aria-hidden="true">ᚠ ᛃ ᚱ</span> <!-- These runes are a cool thing ive seen on other websites,
+          usually japenase lettering so i thought to use these ones -->
+        </h1>
+        <p class="quote">“Thoroughly conscious ignorance is the prelude to every real advance in science.”<br /><span class="quote-attrib">— James Clerk Maxwell</span></p>
+        <p class="lede">
+          I focus on PCB design and hardware bring-up—from schematic and component selection to layout in Altium—plus embedded firmware on Arduino and ESP32 for sensors, control, and integration work.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact Me</a>
+          <a class="btn" href="#">Résumé (PDF)</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <figure class="hero-figure">
+          <div class="hero-photo hero-photo--image zoomable" role="button" tabindex="0" aria-label="View hero image larger">
+            <img
+              src="../images/TEJ3.jpeg"
+              alt="Grade 11 TEJ project—a hardware build using an Arduino microcontroller"
+              width="1000"
+              height="800"
+              decoding="async"
+            />
+          </div>
+          <figcaption class="hero-caption">
+            First major project I made using an MCU (Arduino) in grade&nbsp;11.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <main>
+      <section id="about">
+        <div class="section-head">
+          <span class="sec-mark" aria-hidden="true">ᚨ</span>
+          <h2>About</h2>
+          <span class="section-tag">TRACE</span>
+        </div>
+        <p class="prose offset-1">
+          I’m an Electrical Engineering student at Waterloo building toward boards and systems that behave reliably on the bench and in the field. Lately that means regulator design and PCB layout with WARG, embedded projects with C/C++ and MicroPython, and tightening the loop between schematic review, documentation, and test.
+        </p>
+        <p class="prose offset-2 narrow">
+          Outside class I’ve shipped tutoring outcomes at scale and automation tooling for a health-tech placement—always chasing clean interfaces between hardware, software, and the people who use them.
+        </p>
+      </section>
+
+      <section id="education">
+        <div class="section-head">
+          <span class="sec-mark" aria-hidden="true">ᛟ</span>
+          <h2>Education</h2>
+          <span class="section-tag">FIELD</span>
+        </div>
+        <div class="offset-1" style="max-width: 56rem;">
+          <article class="card">
+            <h3>University of Waterloo</h3>
+            <div class="meta-row">
+              <span>Waterloo, ON</span>
+              <span class="pill">BASc, Electrical Engineering (Co-op)</span>
+            </div>
+            <p class="prose">
+              Candidate for BASc in Electrical Engineering (Co-op), expected graduation December 2030.
+            </p>
+            <ul class="detail" style="margin-top: 0.65rem;">
+              <li><strong>Coursework:</strong> ECE 150 (Programming), ECE 124 (Digital Design), ECE 140 (Linear Circuits), ECE 198 (Project Studio).</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Harold M. Braithwaite Secondary School</h3>
+            <div class="meta-row">
+              <span>Brampton, ON</span>
+              <span class="pill">Ontario Secondary School Diploma (OSSD)</span>
+            </div>
+            <p class="prose">Sep 2020 – Jun 2024</p>
+            <ul class="detail" style="margin-top: 0.65rem;">
+              <li><strong>Activities:</strong> Coding Club, Robotics Club, Royal Canadian Air Cadets (Flight Sergeant), Model UN</li>
+              <li><strong>Final average:</strong> 96%</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section id="experience">
+        <div class="section-head">
+          <span class="sec-mark" aria-hidden="true">ᛞ</span>
+          <h2>Experience</h2>
+          <span class="section-tag">LOAD</span>
+        </div>
+
+        <div class="experience-top">
+        <article class="card">
+          <span class="pill">Electrical · Current</span>
+          <h3>Waterloo Autonomous Racing Group — Electrical Team Member</h3>
+          <div class="meta-row">
+            <span>Waterloo, ON</span>
+            <span>Jan 2026 – Present</span>
+          </div>
+
+          <p class="prose">
+            PCB-focused onboarding and contribution to the team’s electrical design flow—layout, schematic literacy, and documentation aligned with group standards.
+          </p>
+
+          <div class="subblock">
+            <h4>PCB design & layout</h4>
+            <div class="tag-row">
+              <span class="tag">Altium Designer</span>
+              <span class="tag">Voltage regulator PCB</span>
+              <span class="tag">Component selection</span>
+            </div>
+            <ul class="detail">
+              <li>Designed and laid out a custom voltage regulator PCB in Altium Designer, applying component selection and layout practices.</li>
+              <li>Gained hands-on experience with schematics, component selection, and PCB layout following the team’s electrical design standards.</li>
+            </ul>
+          </div>
+
+          <div class="subblock">
+            <h4>Design flow</h4>
+            <div class="tag-row">
+              <span class="tag">Schematic review</span>
+              <span class="tag">Documentation</span>
+            </div>
+            <ul class="detail">
+              <li>Contributed to schematic review and documentation so work stays consistent with the team’s design flow.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="pill">Internship</span>
+          <h3>TalkToMedi — Systems Integration Intern</h3>
+          <div class="meta-row">
+            <span>Waterloo, ON (WEAccelerate Azure &amp; AI Stream)</span>
+            <span>Mar 2026 – Apr 2026</span>
+          </div>
+          <p class="prose">
+            Placement after completing two Microsoft Azure certifications through Waterloo’s WEAccelerate Azure &amp; AI stream—shipping automation and data tooling for clinic outreach and AI-assisted workflows.
+          </p>
+          <ul class="detail">
+            <li>Built a web scraper for high-priority medical clinics using Cursor, retrieving 1,000+ records in under two minutes.</li>
+            <li>Built a social media automation workflow in n8n with Nano Bannan V2 &amp; GPT 5 for AI-assisted content generation and scheduling.</li>
+            <li>Used Vapi to test and refine a conversational script for TalkToMedi’s AI voice agent.</li>
+          </ul>
+        </article>
+        </div>
+
+        <article class="card experience-third offset-2" style="max-width: 52rem;">
+          <span class="pill">Previous</span>
+          <h3>Tutorax Inc. — Academic Tutor</h3>
+          <div class="meta-row">
+            <span>Toronto, ON</span>
+            <span>Sep 2024 – Jan 2026</span>
+          </div>
+          <ul class="detail">
+            <li>Delivered one-on-one and group tutoring in Mathematics, Science, and related subjects with customized lesson plans, quizzes, and practice tests.</li>
+            <li>Achieved an 83% client return rate after the first session.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="projects" class="section-projects-band" aria-labelledby="projects-heading">
+        <div class="section-projects-inner">
+        <div class="section-head">
+          <span class="sec-mark" aria-hidden="true">ᛉ</span>
+          <h2 id="projects-heading">Projects</h2>
+          <span class="section-tag">COIL</span>
+        </div>
+
+        <p class="prose projects-lede">
+          Selected builds—mostly embedded sensors, controls, and a clinical-facing interactive device from project studio. More to come.
+        </p>
+
+        <div class="grid projects-grid">
+          <article class="card project">
+            <div class="thumb thumb--image zoomable" role="button" tabindex="0" aria-label="View project image larger: Dual Sensor Security System">
+              <img
+                src="../images/security.jpeg"
+                alt="Dual sensor security system prototype with ultrasonic and audio sensing"
+                width="800"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <h3>Dual Sensor Security System</h3>
+            <div class="meta-row" style="margin-bottom: 0.35rem;">
+              <span class="pill" style="font-size: 0.72rem;">Mar 2026</span>
+            </div>
+            <div class="tag-row">
+              <span class="tag">ESP32</span>
+              <span class="tag">C++</span>
+              <span class="tag">MicroPython</span>
+              <span class="tag">Flipper Zero</span>
+            </div>
+            <p class="prose">
+              <strong>What:</strong> Intrusion detection with ultrasonic and sound sensors and alerts on events.<br />
+              <strong>How:</strong> C++ and MicroPython (uPython app) for sensor logic and circuit control; Flipper Zero to tune detection parameters wirelessly.<br />
+              <strong>Result:</strong> Working platform for Sub-GHz / microcontroller experiments on future projects.
+            </p>
+          </article>
+
+          <article class="card project">
+            <div class="thumb thumb--image zoomable" role="button" tabindex="0" aria-label="View project image larger: COG360">
+              <img
+                src="../images/Cog360.jpeg"
+                alt="COG360 reaction-time game device with rotary encoder and display"
+                width="800"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <h3>COG360</h3>
+            <div class="meta-row" style="margin-bottom: 0.35rem;">
+              <span class="pill" style="font-size: 0.72rem;">Oct 2025 – Dec 2025</span>
+            </div>
+            <div class="tag-row">
+              <span class="tag">Arduino</span>
+              <span class="tag">C++</span>
+              <span class="tag">Soldering</span>
+              <span class="tag">3D printing</span>
+            </div>
+            <p class="prose">
+              <strong>What:</strong> ECE 198 real-time reaction game for patients with hospital-induced delirium (HID).<br />
+              <strong>How:</strong> Rotary encoder and C++ firmware to measure reaction time between LED blinks; LCD for scores and feedback.<br />
+              <strong>Result:</strong> Clinical-assessment-oriented prototype with round-based scoring.
+            </p>
+          </article>
+
+          <article class="card project">
+            <div class="thumb thumb--image zoomable" role="button" tabindex="0" aria-label="View project image larger: Arduino Radio Controlled Car">
+              <img
+                src="../images/Radio.jpeg"
+                alt="Arduino-based radio controlled car build"
+                width="800"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <h3>Arduino Radio Controlled Car</h3>
+            <div class="meta-row" style="margin-bottom: 0.35rem;">
+              <span class="pill" style="font-size: 0.72rem;">Feb 2025 – Jul 2025</span>
+            </div>
+            <div class="tag-row">
+              <span class="tag">Arduino</span>
+              <span class="tag">C++</span>
+              <span class="tag">RF</span>
+              <span class="tag">Soldering</span>
+            </div>
+            <p class="prose">
+              <strong>What:</strong> Fully wireless RC car with joystick control.<br />
+              <strong>How:</strong> Two Arduino boards with RF transmitter/receiver modules; custom C++ firmware mapping joystick input to motor commands.<br />
+              <strong>Result:</strong> Stable control up to 20&nbsp;m with &lt;5% packet loss and &lt;100&nbsp;ms input-to-movement latency.
+            </p>
+          </article>
+        </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-skills-band" aria-labelledby="skills-heading">
+        <div class="section-skills-inner">
+          <div class="section-head">
+            <span class="sec-mark" aria-hidden="true">ᛇ</span>
+            <h2 id="skills-heading">Skills</h2>
+            <span class="section-tag">BAND</span>
+          </div>
+
+          <p class="prose skills-lede">
+            A quick scan of what I use most across PCB design, embedded builds, and automation work.
+          </p>
+
+          <div class="grid skills-grid">
+            <div class="card">
+              <h3>Hardware</h3>
+              <div class="tag-row">
+                <span class="tag">Altium Designer</span>
+                <span class="tag">Circuit design</span>
+                <span class="tag">Digital logic</span>
+                <span class="tag">Multimeter</span>
+                <span class="tag">Soldering</span>
+                <span class="tag">Wiring</span>
+              </div>
+              <div class="subblock">
+                <h4>Platforms</h4>
+                <div class="tag-row" style="margin-bottom: 0;">
+                  <span class="tag">Arduino</span>
+                  <span class="tag">ESP32</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Languages</h3>
+              <div class="tag-row">
+                <span class="tag">C/C++</span>
+                <span class="tag">Python</span>
+                <span class="tag">Java</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML/CSS</span>
+              </div>
+              <div class="subblock">
+                <h4>Also comfortable with</h4>
+                <ul class="detail" style="margin-top: 0.35rem;">
+                  <li>MicroPython for quick sensor logic and prototyping</li>
+                  <li>CLI tooling and lightweight scripting on Linux</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Tools &amp; technologies</h3>
+              <div class="tag-row">
+                <span class="tag">Git</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">Linux</span>
+                <span class="tag">VS Code</span>
+                <span class="tag">Visual Studio</span>
+                <span class="tag">JetBrains</span>
+                <span class="tag">Cursor</span>
+              </div>
+              <div class="subblock">
+                <h4>Automation</h4>
+                <div class="tag-row" style="margin-bottom: 0;">
+                  <span class="tag">n8n</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>What I’m leaning into next</h3>
+              <ul class="detail" style="margin-top: 0.35rem;">
+                <li>More PCB iterations: tighter power integrity, layout discipline, and review checklists</li>
+                <li>Cleaner firmware interfaces between sensors, comms, and control loops</li>
+                <li>Test habits: repeatable bring-up notes and measurement-driven debugging</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="personal">
+        <div class="section-head">
+          <span class="sec-mark" aria-hidden="true">ᚱ</span>
+          <h2>Personal</h2>
+          <span class="section-tag">SPARE</span>
+        </div>
+        <div class="card offset-2" style="max-width: 42rem;">
+          <p style="margin:0 0 0.55rem;">Coming soon.</p>
+          <a class="nav-link" href="personal.html" aria-label="Open personal page">
+            Enter personal page &rarr;
+          </a>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="section-head">
+          <span class="sec-mark" aria-hidden="true">ᛜ</span>
+          <h2>Contact</h2>
+          <span class="section-tag">PING</span>
+        </div>
+        <div class="card offset-1" style="max-width: 44rem;">
+          <p class="prose">Reach me by email or through LinkedIn and GitHub.</p>
+          <div class="tag-row">
+            <a class="nav-link" href="mailto:kabir.virk@uwaterloo.ca">Email</a>
+            <a class="nav-link" href="https://linkedin.com/in/kabir-virk" rel="noopener noreferrer">LinkedIn</a>
+            <a class="nav-link" href="https://github.com/kabirvirk1206" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="footer-note">Kabir Virk </p>
+    </footer>
+  </div>
+
+  <dialog id="photo-lightbox" class="photo-lightbox" aria-label="Expanded photo">
+    <div class="photo-lightbox-panel">
+      <button type="button" class="photo-lightbox-close" aria-label="Close">&times;</button>
+      <img class="photo-lightbox-img" src="" alt="" tabindex="-1" />
+      <p class="photo-lightbox-caption" hidden></p>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
