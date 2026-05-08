@@ -221,6 +221,33 @@
     transform: rotate(0.35deg);
   }
 
+  .hero-figure {
+    margin: 0;
+  }
+
+  .hero-photo.hero-photo--image {
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    transform: none;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+  }
+
+  .hero-photo--image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .hero-caption {
+    margin: 0.65rem 0 0;
+    font-size: 0.84rem;
+    line-height: 1.38;
+    color: var(--text-muted);
+    letter-spacing: 0.01em;
+  }
+
 
   section {
     margin-top: clamp(2.6rem, 5vw, 3.9rem);
@@ -511,6 +538,19 @@
     font-size: 0.78rem;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+
+  .thumb.thumb--image {
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+  }
+
+  .thumb--image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   footer {

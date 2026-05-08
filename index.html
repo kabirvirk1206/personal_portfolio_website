@@ -4,6 +4,12 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kabir Virk — Personal Portfolio</title>
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Kabir Virk" />
+  <link rel="manifest" href="/site.webmanifest" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -42,9 +48,20 @@
         </div>
       </div>
       <div class="hero-visual">
-        <div class="hero-photo" role="img" aria-label="Hero image placeholder">
-          Placeholder Hero Image
-        </div>
+        <figure class="hero-figure">
+          <div class="hero-photo hero-photo--image">
+            <img
+              src="images/TEJ3.jpeg"
+              alt="Grade 11 TEJ project—a hardware build using an Arduino microcontroller"
+              width="1000"
+              height="800"
+              decoding="async"
+            />
+          </div>
+          <figcaption class="hero-caption">
+            First major project I made using an MCU (Arduino) in grade&nbsp;11.
+          </figcaption>
+        </figure>
       </div>
     </section>
 
@@ -186,7 +203,16 @@
 
         <div class="grid projects-grid">
           <article class="card project">
-            <div class="thumb">Image placeholder</div>
+            <div class="thumb thumb--image">
+              <img
+                src="images/security.jpeg"
+                alt="Dual sensor security system prototype with ultrasonic and audio sensing"
+                width="800"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
             <h3>Dual Sensor Security System</h3>
             <div class="meta-row" style="margin-bottom: 0.35rem;">
               <span class="pill" style="font-size: 0.72rem;">Mar 2026</span>
@@ -205,7 +231,16 @@
           </article>
 
           <article class="card project">
-            <div class="thumb">Image placeholder</div>
+            <div class="thumb thumb--image">
+              <img
+                src="images/Cog360.jpeg"
+                alt="COG360 reaction-time game device with rotary encoder and display"
+                width="800"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
             <h3>COG360</h3>
             <div class="meta-row" style="margin-bottom: 0.35rem;">
               <span class="pill" style="font-size: 0.72rem;">Oct 2025 – Dec 2025</span>
@@ -224,7 +259,16 @@
           </article>
 
           <article class="card project">
-            <div class="thumb">Image placeholder</div>
+            <div class="thumb thumb--image">
+              <img
+                src="images/Radio.jpeg"
+                alt="Arduino-based radio controlled car build"
+                width="800"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
             <h3>Arduino Radio Controlled Car</h3>
             <div class="meta-row" style="margin-bottom: 0.35rem;">
               <span class="pill" style="font-size: 0.72rem;">Feb 2025 – Jul 2025</span>
