@@ -830,3 +830,20 @@
     display: none;
   }
 }
+
+.projects-grid,
+.skills-grid {
+  display: grid;
+}
+
+.projects-grid > .project,
+.skills-grid > .card {
+  margin-top: 0 !important;
+}
+
+.projects-grid > .project,
+.skills-grid > .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
