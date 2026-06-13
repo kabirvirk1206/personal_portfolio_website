@@ -290,55 +290,55 @@ const PREVIEWS = {
     rune: 'ᚨ',
     title: 'LORE',
     highlights: [
-      { label: 'EE @ Waterloo',       desc: 'Electrical Engineering co-op, graduating Dec 2030' },
-      { label: 'PCB Design',          desc: 'Laying out boards in Altium Designer with WARG' },
-      { label: 'Embedded Firmware',   desc: 'C/C++ and MicroPython on Arduino and ESP32' },
-      { label: 'RF & Wireless',       desc: 'Sub-GHz experiments with Flipper Zero and custom modules' },
+      { label: 'EE @ Waterloo',      desc: 'Electrical Engineering co-op, graduating Dec 2030' },
+      { label: 'PCB Design',         desc: 'Laying out boards in Altium Designer with WARG on competition UAVs and fixed-wing aircraft' },
+      { label: 'Embedded Firmware',  desc: 'C/C++, Python, and MicroPython across Arduino, ESP32, and Flipper Zero' },
+      { label: 'Systems Work',       desc: 'Built automation workflows and AI tooling as a Systems Integration Intern at TalkToMedi' },
     ],
   },
   education: {
     rune: 'ᛟ',
     title: 'COVENANT',
     highlights: [
-      { label: 'University of Waterloo', desc: 'BASc Electrical Engineering (co-op), 2024-2030' },
-      { label: 'ECE Coursework',         desc: 'Programming, digital circuits, linear circuits, project studio' },
+      { label: 'University of Waterloo', desc: 'BASc Electrical Engineering co-op, expected Dec 2030' },
+      { label: 'ECE Coursework',         desc: 'ECE 150 Programming, ECE 124 Digital Circuits, ECE 140 Linear Circuits, ECE 198 Project Studio' },
       { label: 'H.M. Braithwaite SS',    desc: 'OSSD, 2020-2024' },
-      { label: 'Extracurriculars',       desc: 'Robotics Club, Royal Canadian Air Cadets, Flight Sergeant' },
+      { label: 'Extracurriculars',       desc: 'Robotics Club, Royal Canadian Air Cadets Flight Sergeant, Model UN' },
     ],
   },
   experience: {
     rune: 'ᛞ',
     title: 'EMBER',
     highlights: [
-      { label: 'WARG Electrical',     desc: 'LDO PCB in Altium, schematic review, UAV competition design' },
-      { label: 'TalkToMedi Intern',   desc: 'Scraped 1,000+ clinic records, built n8n automations, Azure certs' },
-      { label: 'Tutorax Tutor',       desc: '20+ students, 83% return rate, Math and Science' },
+      { label: 'WARG Electrical',   desc: 'Designed LDO voltage regulator PCB in Altium, reviewed schematics, contributed PCB design on drone and fixed-wing aircraft projects' },
+      { label: 'TalkToMedi Intern', desc: 'Built Python web scraper retrieving 1,000+ clinic records in under 2 minutes, n8n automation workflow with GPT-5, tested AI voice agent with Vapi' },
+      { label: 'Tutorax Tutor',     desc: '20+ students, 83% client return rate, Math and Science across multiple grade levels' },
     ],
   },
   projects: {
     rune: 'ᛉ',
     title: 'ESTUS',
     highlights: [
-      { label: 'LDO Voltage Regulator', desc: 'Full Altium PCB design flow, zero DRC violations, DC bias verified' },
-      { label: 'SerialScope',           desc: 'Python and HTML/CSS/JS hardware diagnostic tool, live waveform visualization' },
-      { label: 'Arduino RC Car',        desc: 'Two-Arduino RF system, stable 20m, under 100ms latency, custom PCB' },
+      { label: 'LDO Voltage Regulator', desc: 'Full Altium design flow from component selection through routing and DRC, zero DRC violations, DC bias verified with Murata SimSurface' },
+      { label: 'SerialScope',           desc: 'Python and FastAPI backend streaming live ADC voltage samples to a plain HTML/CSS/JS frontend with auto board detection via PySerial' },
+      { label: 'Arduino RC Car',        desc: 'Two-Arduino RF system with custom C++ firmware, stable to 20m with under 5% packet loss and under 100ms latency, full circuit soldered onto custom PCB' },
     ],
   },
   skills: {
     rune: 'ᛇ',
     title: 'ARSENAL',
     highlights: [
-      { label: 'Hardware and EDA',  desc: 'Altium Designer, Quartus, circuit design, soldering, oscilloscope, multimeter' },
-      { label: 'Languages',         desc: 'C/C++, Verilog, Python, JavaScript, HTML/CSS, MicroPython, Bash' },
-      { label: 'Platforms',         desc: 'Arduino, ESP32, Flipper Zero' },
-      { label: 'Tools',             desc: 'Git, Linux, VS Code, JetBrains, n8n, Cursor' },
+      { label: 'Hardware and EDA', desc: 'Altium Designer, Quartus, Arduino, ESP32, Flipper Zero, oscilloscope, DC power supply, multimeter, soldering' },
+      { label: 'Languages',        desc: 'C/C++, Verilog, Python, JavaScript, HTML/CSS, MicroPython for Flipper Zero, Bash for scripting' },
+      { label: 'Tools',            desc: 'Git, GitHub, Linux, VS Code, JetBrains, Cursor, n8n' },
+      { label: 'Learning Next',    desc: 'STM32, FPGA fundamentals, CAD for enclosure design' },
     ],
   },
   personal: {
     rune: 'ᚱ',
     title: 'HOLLOW',
     highlights: [
-      { label: 'Coming Soon', desc: 'Life outside the bench, page under construction' },
+      { label: 'Coming Soon', desc: 'Page under construction' },
     ],
   },
   contact: {
@@ -355,12 +355,11 @@ const PREVIEWS = {
     rune: 'ᛏ',
     title: 'SCROLL',
     highlights: [
-      { label: 'Full Resume',      desc: 'Complete work history, projects, and skills as a PDF' },
+      { label: 'Full Resume',      desc: 'Work history, projects, and skills as a PDF' },
       { label: 'Opens in new tab', desc: 'Google Drive link, always the latest version' },
     ],
   },
 };
-
 
 class MenuController {
   constructor() {
