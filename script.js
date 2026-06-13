@@ -292,72 +292,71 @@ const PREVIEWS = {
     highlights: [
       { label: 'EE @ Waterloo',       desc: 'Electrical Engineering co-op, graduating Dec 2030' },
       { label: 'PCB Design',          desc: 'Laying out boards in Altium Designer with WARG' },
-      { label: 'Embedded Firmware',   desc: 'C/C++ and MicroPython on Arduino & ESP32' },
-      { label: 'RF & Wireless',       desc: 'Sub-GHz experiments with Flipper Zero & custom modules' },
+      { label: 'Embedded Firmware',   desc: 'C/C++ and MicroPython on Arduino and ESP32' },
+      { label: 'RF & Wireless',       desc: 'Sub-GHz experiments with Flipper Zero and custom modules' },
     ],
   },
   education: {
     rune: 'ᛟ',
     title: 'COVENANT',
     highlights: [
-      { label: 'University of Waterloo', desc: 'BASc Electrical Engineering (co-op), 2024–2030' },
+      { label: 'University of Waterloo', desc: 'BASc Electrical Engineering (co-op), 2024-2030' },
       { label: 'ECE Coursework',         desc: 'Programming, digital circuits, linear circuits, project studio' },
-      { label: 'H.M. Braithwaite SS',    desc: 'OSSD — 96% final average, 2020–2024' },
-      { label: 'Extracurriculars',       desc: 'Robotics Club, Royal Canadian Air Cadets — Flight Sergeant' },
+      { label: 'H.M. Braithwaite SS',    desc: 'OSSD, 2020-2024' },
+      { label: 'Extracurriculars',       desc: 'Robotics Club, Royal Canadian Air Cadets, Flight Sergeant' },
     ],
   },
   experience: {
     rune: 'ᛞ',
     title: 'EMBER',
     highlights: [
-      { label: 'WARG — Electrical',   desc: 'Designed LDO PCB in Altium for competition UAV' },
-      { label: 'TalkToMedi Intern',   desc: 'Scraped 1,000+ clinic records; built n8n automations' },
-      { label: 'Tutorax — Tutor',     desc: '20+ students, 83% return rate, Math & Science' },
-      { label: 'Certifications',      desc: 'Two Microsoft Azure certifications earned' },
+      { label: 'WARG Electrical',     desc: 'LDO PCB in Altium, schematic review, UAV competition design' },
+      { label: 'TalkToMedi Intern',   desc: 'Scraped 1,000+ clinic records, built n8n automations, Azure certs' },
+      { label: 'Tutorax Tutor',       desc: '20+ students, 83% return rate, Math and Science' },
     ],
   },
   projects: {
     rune: 'ᛉ',
     title: 'ESTUS',
     highlights: [
-      { label: 'Dual Sensor Security', desc: 'ESP32 ultrasonic + sound detection; Flipper Zero RF tuning' },
-      { label: 'Cog360 — ECE 198',     desc: 'Real-time delirium-assessment game with rotary encoder & LCD' },
-      { label: 'Arduino RC Car',       desc: 'Two-Arduino RF system; stable 20 m, <100 ms latency' },
+      { label: 'LDO Voltage Regulator', desc: 'Full Altium PCB design flow, zero DRC violations, DC bias verified' },
+      { label: 'SerialScope',           desc: 'Python and HTML/CSS/JS hardware diagnostic tool, live waveform visualization' },
+      { label: 'Arduino RC Car',        desc: 'Two-Arduino RF system, stable 20m, under 100ms latency, custom PCB' },
     ],
   },
   skills: {
     rune: 'ᛇ',
     title: 'ARSENAL',
     highlights: [
-      { label: 'Hardware & EDA',  desc: 'Altium Designer, circuit design, soldering, multimeter' },
-      { label: 'Languages',       desc: 'C/C++, Python, Java, JavaScript, HTML/CSS, MicroPython' },
-      { label: 'Platforms',       desc: 'Arduino, ESP32, Flipper Zero, Raspberry Pi' },
-      { label: 'Tools',           desc: 'Git, Linux, VS Code, JetBrains, n8n, Vapi, Cursor' },
+      { label: 'Hardware and EDA',  desc: 'Altium Designer, Quartus, circuit design, soldering, oscilloscope, multimeter' },
+      { label: 'Languages',         desc: 'C/C++, Verilog, Python, JavaScript, HTML/CSS, MicroPython, Bash' },
+      { label: 'Platforms',         desc: 'Arduino, ESP32, Flipper Zero' },
+      { label: 'Tools',             desc: 'Git, Linux, VS Code, JetBrains, n8n, Cursor' },
     ],
   },
   personal: {
     rune: 'ᚱ',
     title: 'HOLLOW',
     highlights: [
-      { label: 'Coming Soon', desc: 'Life outside the bench — page under construction' },
+      { label: 'Coming Soon', desc: 'Life outside the bench, page under construction' },
     ],
   },
   contact: {
     rune: 'ᛜ',
-    title: 'SUMMON SIGN',
+    title: 'SUMMON',
     highlights: [
       { label: 'Personal Email', desc: 'kabirvirk1206@gmail.com' },
+      { label: 'Waterloo Email', desc: 'kabir.virk@uwaterloo.ca' },
       { label: 'LinkedIn',       desc: 'linkedin.com/in/kabir-virk' },
       { label: 'GitHub',         desc: 'github.com/kabirvirk1206' },
-      { label: 'Open to Co-op',  desc: 'Embedded systems & PCB design roles — reach out anytime' },
     ],
   },
   resume: {
     rune: 'ᛏ',
     title: 'SCROLL',
     highlights: [
-      { label: 'Full Résumé',    desc: 'Complete work history, projects, and skills as a PDF' },
-      { label: 'Opens in new tab', desc: 'Google Drive link — always the latest version' },
+      { label: 'Full Resume',      desc: 'Complete work history, projects, and skills as a PDF' },
+      { label: 'Opens in new tab', desc: 'Google Drive link, always the latest version' },
     ],
   },
 };
@@ -380,7 +379,8 @@ class MenuController {
       item.addEventListener('mouseenter', () => {
         clearTimeout(this.hideTimer);
         this._setActive(i);
-        this._showPreview(item.dataset.page || item.dataset.key);
+        const key = item.dataset.page || item.dataset.key || 'resume';
+        this._showPreview(key);
       });
 
       item.addEventListener('mouseleave', () => {
@@ -432,14 +432,13 @@ class MenuController {
     const next = Math.max(0, Math.min(this.items.length - 1, this.activeIdx + dir));
     this.items[next].focus();
     this._setActive(next);
-    this._showPreview(this.items[next].dataset.page || this.items[next].dataset.key);
+    const key = this.items[next].dataset.page || this.items[next].dataset.key || 'resume';
+    this._showPreview(key);
   }
 
   _showPreview(key) {
     const d = PREVIEWS[key];
-    if (!d) {
-      return;
-    }
+    if (!d) return;
     const lines = (d.highlights || []).map(h => {
       return `<div class="preview-line">
         <span class="preview-line-label">${h.label}</span>
@@ -459,9 +458,7 @@ class MenuController {
 
   _navigate(item) {
     const page = item.dataset.page;
-    if (!page) {
-      return;
-    }
+    if (!page) return;
 
     item.classList.add('selecting');
     setTimeout(() => item.classList.remove('selecting'), 450);
@@ -472,21 +469,14 @@ class MenuController {
 
     setTimeout(() => {
       document.getElementById('landing').classList.add('hidden');
-
-      document.querySelectorAll('.page-view').forEach(v => {
-        v.hidden = true;
-      });
-
+      document.querySelectorAll('.page-view').forEach(v => { v.hidden = true; });
       const target = document.getElementById('page-' + page);
       if (target) {
         target.hidden = false;
         target.querySelector('.page-body')?.scrollTo({ top: 0 });
       }
-
       this.overlay.style.opacity = '0';
-      setTimeout(() => {
-        this.overlay.style.pointerEvents = 'none';
-      }, 360);
+      setTimeout(() => { this.overlay.style.pointerEvents = 'none'; }, 360);
     }, 330);
   }
 }
@@ -494,17 +484,15 @@ class MenuController {
 
 function initEmberParticles() {
   const container = document.getElementById('ember-bg');
-  if (!container) {
-    return;
-  }
+  if (!container) return;
   for (let i = 0; i < 22; i++) {
-    const el    = document.createElement('div');
+    const el     = document.createElement('div');
     el.className = 'ember-particle';
-    const left  = 36 + Math.random() * 28;
-    const top   = 5 + Math.random() * 30;
-    const dur   = 2 + Math.random() * 3.5;
-    const delay = Math.random() * 5;
-    const dx    = ((Math.random() - 0.5) * 50).toFixed(0);
+    const left   = 36 + Math.random() * 28;
+    const top    = 5 + Math.random() * 30;
+    const dur    = 2 + Math.random() * 3.5;
+    const delay  = Math.random() * 5;
+    const dx     = ((Math.random() - 0.5) * 50).toFixed(0);
     el.style.cssText = `
       left: ${left}%;
       top: ${top}%;
@@ -522,9 +510,7 @@ function initEmberParticles() {
 
 function initLightbox() {
   const dialog   = document.getElementById('photo-lightbox');
-  if (!dialog) {
-    return;
-  }
+  if (!dialog) return;
   const dlgImg   = dialog.querySelector('.photo-lightbox-img');
   const dlgCap   = dialog.querySelector('.photo-lightbox-caption');
   const closeBtn = dialog.querySelector('.photo-lightbox-close');
@@ -536,9 +522,7 @@ function initLightbox() {
 
   function openLightbox(el) {
     const img = el.querySelector('img');
-    if (!img?.src || !dlgImg) {
-      return;
-    }
+    if (!img?.src || !dlgImg) return;
     dlgImg.src = img.currentSrc || img.src;
     dlgImg.alt = img.alt || '';
     const cap = captionFor(el);
@@ -552,16 +536,11 @@ function initLightbox() {
 
   document.body.addEventListener('click', e => {
     const z = e.target.closest('.zoomable');
-    if (z) {
-      e.preventDefault();
-      openLightbox(z);
-    }
+    if (z) { e.preventDefault(); openLightbox(z); }
   });
 
   document.body.addEventListener('keydown', e => {
-    if (e.key !== 'Enter' && e.key !== ' ') {
-      return;
-    }
+    if (e.key !== 'Enter' && e.key !== ' ') return;
     if (e.target?.classList?.contains('zoomable')) {
       e.preventDefault();
       openLightbox(e.target);
@@ -571,35 +550,25 @@ function initLightbox() {
   closeBtn?.addEventListener('click', () => dialog.close());
 
   dialog.addEventListener('click', e => {
-    if (!panel) {
-      return;
-    }
+    if (!panel) return;
     const r = panel.getBoundingClientRect();
     if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) {
       dialog.close();
     }
   });
 
-  dialog.addEventListener('close', () => {
-    if (dlgImg) {
-      dlgImg.src = '';
-    }
-  });
+  dialog.addEventListener('close', () => { if (dlgImg) dlgImg.src = ''; });
 }
 
 
 function initReturnLink() {
   const overlay = document.getElementById('fog-overlay');
   const landing = document.getElementById('landing');
-  if (!landing) {
-    return;
-  }
+  if (!landing) return;
 
   document.body.addEventListener('click', e => {
     const btn = e.target.closest('[data-return]');
-    if (!btn) {
-      return;
-    }
+    if (!btn) return;
     e.preventDefault();
 
     overlay.style.transition = 'opacity 0.28s ease';
@@ -607,14 +576,10 @@ function initReturnLink() {
     overlay.style.pointerEvents = 'auto';
 
     setTimeout(() => {
-      document.querySelectorAll('.page-view').forEach(v => {
-        v.hidden = true;
-      });
+      document.querySelectorAll('.page-view').forEach(v => { v.hidden = true; });
       landing.classList.remove('hidden');
       overlay.style.opacity = '0';
-      setTimeout(() => {
-        overlay.style.pointerEvents = 'none';
-      }, 320);
+      setTimeout(() => { overlay.style.pointerEvents = 'none'; }, 320);
     }, 260);
   });
 }
@@ -622,9 +587,7 @@ function initReturnLink() {
 
 document.addEventListener('DOMContentLoaded', () => {
   const canvas = document.getElementById('bonfire-canvas');
-  if (canvas) {
-    new BonfireAnimation(canvas).start();
-  }
+  if (canvas) new BonfireAnimation(canvas).start();
   initEmberParticles();
   new MenuController();
   initLightbox();
