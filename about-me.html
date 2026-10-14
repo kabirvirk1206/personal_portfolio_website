@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>More about me — Kabir Virk</title>
+  <meta name="description" content="Blog, balisong, shows, music, games, and more." />
+
+  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&amp;family=Barlow+Condensed:wght@300;400;500;600&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Sans+Runic&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="alt">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar" id="topbar">
+  <div class="shell topbar-inner">
+    <a class="wordmark" href="index.html">Kabir Virk</a>
+
+    <nav class="topnav" id="topnav" aria-label="Sections">
+      <a href="index.html#about">About</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#personal">Personal</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <span class="topbar-glyphs" aria-hidden="true">ᛉ</span>
+
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></g>
+      </svg>
+    </button>
+  </div>
+  <div class="compass" aria-hidden="true">
+    <div class="compass-track" id="compass-track"></div>
+    <span class="compass-needle"></span>
+  </div>
+</header>
+
+<canvas class="snow" id="snow" aria-hidden="true"></canvas>
+<div class="fog fog-a" aria-hidden="true"></div>
+<div class="fog fog-b" aria-hidden="true"></div>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="shell">
+      <a class="btn btn-line btn-sm back-btn" href="index.html">← Back</a>
+      <h1 class="page-title">More about me</h1>
+      <p class="page-sub">Blog, balisong, shows, music, games, and more.</p>
+    </div>
+  </section>
+
+  <section class="section" id="blog">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Blog</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᛒ</span>
+      </div>
+
+      <div class="panel reveal">
+        <article class="blog-card">
+          <span class="blog-date">Coming soon</span>
+          <h3 class="blog-title">Looking Back on Year 1</h3>
+          <span class="tag">Draft</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="balisong">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Balisong</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᛏ</span>
+      </div>
+
+      <div class="bt" id="bt-root">
+        <div class="bt-editbar" id="bt-editbar" hidden>
+          <label class="btn btn-line btn-sm bt-file-btn">
+            Load backup file
+            <input type="file" id="bt-file" accept=".json,application/json" hidden />
+          </label>
+          <p class="bt-file-status" id="bt-file-status">Preview a balisongtricks.dev backup before publishing it.</p>
+        </div>
+
+        <div class="bt-dash reveal">
+          <div class="bt-tile bt-tile-level">
+            <p class="bt-label">Level</p>
+            <p class="bt-big" id="bt-level">1</p>
+            <div class="bt-xp"><span id="bt-xp-fill"></span></div>
+            <p class="bt-sub" id="bt-xp-text">0 XP</p>
+          </div>
+          <div class="bt-tile">
+            <p class="bt-label">Current Streak</p>
+            <p class="bt-big"><span id="bt-streak">0</span><small> days</small></p>
+            <p class="bt-sub">Best <span id="bt-best">0</span> days</p>
+          </div>
+          <div class="bt-tile">
+            <p class="bt-label">Learned</p>
+            <p class="bt-big" id="bt-learned">0</p>
+            <p class="bt-sub">tricks at Learned or above</p>
+          </div>
+          <div class="bt-tile">
+            <p class="bt-label">Mastered</p>
+            <p class="bt-big" id="bt-mastered">0</p>
+            <p class="bt-sub">tricks fully mastered</p>
+          </div>
+        </div>
+
+        <div class="bt-panels reveal">
+          <div class="bt-panel bt-panel-wide">
+            <p class="bt-label">Mastery Progress</p>
+            <div class="bt-mbar" id="bt-mastery-bar"></div>
+            <div class="bt-mkey" id="bt-mastery-key"></div>
+          </div>
+          <div class="bt-panel">
+            <p class="bt-label">Difficulty Distribution</p>
+            <div class="bt-dist" id="bt-diff-dist"></div>
+          </div>
+          <div class="bt-panel bt-challenge" id="bt-challenge"></div>
+          <div class="bt-panel bt-panel-wide">
+            <p class="bt-label">Activity · last 26 weeks</p>
+            <div class="bt-heat" id="bt-heatmap"></div>
+          </div>
+          <div class="bt-panel bt-panel-wide">
+            <p class="bt-label">Achievements</p>
+            <div class="bt-achs" id="bt-achievements"></div>
+          </div>
+        </div>
+
+        <div class="bt-library">
+          <div class="bt-lib-head">
+            <h3 class="bt-lib-title">Tricks Library</h3>
+            <p class="bt-source" id="bt-source"></p>
+          </div>
+
+          <div class="bt-chips bt-tabs" id="bt-tabs" role="group" aria-label="Tricks or combos"></div>
+
+          <div class="bt-controls">
+            <label class="bt-search">
+              <span class="runes" aria-hidden="true">ᛉ</span>
+              <input type="search" id="bt-search" placeholder="Search tricks..." aria-label="Search tricks" />
+            </label>
+            <label class="bt-sort">
+              <span>Sort by</span>
+              <select id="bt-sort">
+                <option value="difficulty">Difficulty</option>
+                <option value="mastery">Mastery</option>
+                <option value="name">Name</option>
+              </select>
+            </label>
+            <button class="bt-chip" id="bt-favorites" type="button" aria-pressed="false" hidden>★ Favorites</button>
+            <button class="bt-chip" id="bt-learnable" type="button" aria-pressed="false" hidden>Learnable combos</button>
+          </div>
+
+          <div class="bt-chips" id="bt-diff" role="group" aria-label="Filter by difficulty"></div>
+          <div class="bt-chips" id="bt-mastery" role="group" aria-label="Filter by mastery"></div>
+
+          <p class="bt-count-line" id="bt-result-count"></p>
+          <div class="bt-grid" id="bt-grid"></div>
+          <p class="bt-empty" id="bt-empty" hidden>No tricks match your filters.</p>
+          <div class="bt-more-wrap"><button class="btn btn-line" id="bt-more" type="button" hidden>Show more</button></div>
+
+          <p class="bt-credit">Trick and combo library from <a href="https://balisongtricks.dev/" target="_blank" rel="noopener noreferrer">balisongtricks.dev</a>.</p>
+        </div>
+      </div>
+
+      <dialog class="bt-dialog" id="bt-dialog" aria-label="Trick details">
+        <button class="bt-dialog-x" type="button" aria-label="Close">&times;</button>
+        <div class="bt-dialog-body"></div>
+      </dialog>
+    </div>
+  </section>
+
+  <section class="section" id="shows">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Shows</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᚹ</span>
+      </div>
+
+      <div class="reveal">
+        <div class="now-watching" id="now-watching" hidden>
+          <span class="now-kicker">Currently watching</span>
+          <span class="now-title" id="now-watching-title"></span>
+        </div>
+        <div class="shows-tabs" id="shows-tabs" role="group" aria-label="Filter shows"></div>
+        <div class="split">
+          <div class="panel">
+            <p class="mini-label">Rated <span class="runes" aria-hidden="true">ᛊ</span></p>
+            <div id="shows-rated"></div>
+          </div>
+          <div class="panel">
+            <p class="mini-label">Up next <span class="runes" aria-hidden="true">ᚾ</span></p>
+            <div id="shows-want"></div>
+          </div>
+        </div>
+        <a class="btn btn-line btn-sm social-link" data-link="letterboxd" href="#" target="_blank" rel="noopener noreferrer" hidden>Letterboxd →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="music">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Songs I'm looping</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᛚ</span>
+      </div>
+
+      <div class="split split-wide">
+        <div class="panel reveal">
+          <ol class="tracklist">
+            <li><span class="track-no">01</span><span class="track-name">—</span><span class="track-by">—</span></li>
+            <li><span class="track-no">02</span><span class="track-name">—</span><span class="track-by">—</span></li>
+            <li><span class="track-no">03</span><span class="track-name">—</span><span class="track-by">—</span></li>
+            <li><span class="track-no">04</span><span class="track-name">—</span><span class="track-by">—</span></li>
+            <li><span class="track-no">05</span><span class="track-name">—</span><span class="track-by">—</span></li>
+          </ol>
+          <p class="panel-note">What's been on repeat lately</p>
+        </div>
+
+        <div class="panel reveal">
+          <p class="mini-label">Playlist <span class="runes" aria-hidden="true">ᛚ</span></p>
+          <div class="spotify-embed" id="spotify-embed"></div>
+          <p class="soon" id="spotify-soon">Coming soon.</p>
+          <a class="btn btn-line btn-sm social-link" data-link="spotify" href="#" target="_blank" rel="noopener noreferrer" hidden>Spotify →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="setup">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">PC &amp; Games</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᛜ</span>
+      </div>
+
+      <div class="split split-wide">
+        <div class="panel reveal">
+          <p class="mini-label">The rig <span class="runes" aria-hidden="true">ᚷ</span></p>
+          <div class="kv-row"><span class="kv-key">CPU</span><span class="kv-val">—</span></div>
+          <div class="kv-row"><span class="kv-key">GPU</span><span class="kv-val">—</span></div>
+          <div class="kv-row"><span class="kv-key">Memory</span><span class="kv-val">—</span></div>
+          <div class="kv-row"><span class="kv-key">Storage</span><span class="kv-val">—</span></div>
+          <div class="kv-row"><span class="kv-key">Motherboard</span><span class="kv-val">—</span></div>
+          <div class="kv-row"><span class="kv-key">Cooling</span><span class="kv-val">—</span></div>
+          <div class="kv-row"><span class="kv-key">Monitor</span><span class="kv-val">—</span></div>
+          <div class="kv-row"><span class="kv-key">Keyboard</span><span class="kv-val">—</span></div>
+        </div>
+
+        <div class="panel reveal">
+          <p class="mini-label">Playing <span class="runes" aria-hidden="true">ᛈ</span></p>
+          <p class="soon">Coming soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reading">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Reading</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᚨ</span>
+      </div>
+
+      <div class="split">
+        <div class="panel reveal">
+          <p class="mini-label">Read <span class="runes" aria-hidden="true">ᛞ</span></p>
+          <p class="soon">Coming soon.</p>
+        </div>
+        <div class="panel reveal">
+          <p class="mini-label">Want to read <span class="runes" aria-hidden="true">ᚾ</span></p>
+          <p class="soon">Coming soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="food">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Food &amp; coffee</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᚠ</span>
+      </div>
+
+      <div class="split">
+        <div class="panel reveal">
+          <p class="mini-label">Always coming back to <span class="runes" aria-hidden="true">ᚠ</span></p>
+          <p class="soon">Coming soon.</p>
+        </div>
+        <div class="panel reveal">
+          <p class="mini-label">Cafés <span class="runes" aria-hidden="true">ᚲ</span></p>
+          <p class="soon">Coming soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="colors">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Colors</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᛊ</span>
+      </div>
+
+      <div class="swatch-grid">
+        <div class="swatch reveal">
+          <div class="swatch-chip" style="background: #dcca9c;"></div>
+          <div class="swatch-meta">
+            <p class="swatch-name">Gold</p>
+            <p class="swatch-hex">#DCCA9C</p>
+          </div>
+        </div>
+        <div class="swatch reveal">
+          <div class="swatch-chip" style="background: #15171c;"></div>
+          <div class="swatch-meta">
+            <p class="swatch-name">Slate</p>
+            <p class="swatch-hex">#15171C</p>
+          </div>
+        </div>
+        <div class="swatch reveal">
+          <div class="swatch-chip" style="background: #ede7d9;"></div>
+          <div class="swatch-meta">
+            <p class="swatch-name">Bone</p>
+            <p class="swatch-hex">#EDE7D9</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="builds">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Builds</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᚷ</span>
+      </div>
+
+      <div class="gallery">
+        <figure>
+          <img class="zoomable" src="images/PCBldo.png" alt="LDO Voltage Regulator PCB" loading="lazy" />
+          <figcaption>LDO Voltage Regulator PCB</figcaption>
+        </figure>
+        <figure>
+          <img class="zoomable" src="images/Radio.jpeg" alt="Arduino Radio Controlled Car" loading="lazy" />
+          <figcaption>Arduino Radio Controlled Car</figcaption>
+        </figure>
+        <figure>
+          <img class="zoomable" src="images/SerialScope.png" alt="SerialScope" loading="lazy" />
+          <figcaption>SerialScope</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="plan">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Weekly plan</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᛇ</span>
+      </div>
+
+      <div class="panel reveal">
+        <!-- Google Calendar: Settings → Integrate calendar → Embed code. Make the calendar public first. -->
+        <p class="soon">Coming soon.</p>
+      </div>
+
+      <div style="text-align: center; margin-top: 3.5rem;">
+        <a class="btn btn-line" href="index.html">← Return to main page</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="end-mark" aria-hidden="true">
+  <div class="shell"><span>Kabir Virk</span></div>
+</div>
+
+<footer class="site-foot">
+  <div class="shell foot-inner">
+    <p class="foot-copy">© Kabir Virk 2026</p>
+    <span class="foot-runes" aria-hidden="true">ᛉ</span>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Enlarged image">
+  <button class="lightbox-x" type="button" aria-label="Close">&times;</button>
+  <img src="" alt="" />
+  <p class="lightbox-cap"></p>
+</dialog>
+
+<script src="personal-data.js"></script>
+<script src="balisong-data.js"></script>
+<script src="script.js"></script>
+<script src="balisong.js"></script>
+</body>
+</html>
