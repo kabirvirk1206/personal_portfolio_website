@@ -263,8 +263,36 @@ function initReveal() {
 
 function initImageReveal() {
   const figures = Array.from(document.querySelectorAll('.shot, .hero-figure, .gallery figure'));
+  if (!figures.length) {
+    return;
+  }
+
   figures.forEach(figure => figure.classList.add('imgfx'));
-  observeOnce(figures, { threshold: 0.18 }, figure => figure.classList.add('in'));
+
+  const show = figure => figure.classList.add('in');
+  observeOnce(figures, { threshold: 0.05 }, show);
+
+  const sweep = () => {
+    let pending = 0;
+    figures.forEach(figure => {
+      if (figure.classList.contains('in')) {
+        return;
+      }
+      pending++;
+      const box = figure.getBoundingClientRect();
+      if (box.top < window.innerHeight * 0.95 && box.bottom > 0) {
+        show(figure);
+      }
+    });
+    if (!pending) {
+      window.removeEventListener('scroll', sweep);
+    }
+  };
+
+  window.addEventListener('scroll', sweep, { passive: true });
+  window.addEventListener('load', sweep);
+  setTimeout(sweep, 400);
+  setTimeout(() => figures.forEach(show), 6000);
 }
 
 
