@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kabir Virk</title>
+  <meta name="description" content="I'm an Electrical Engineering student at Waterloo focused on PCB design and embedded systems." />
+
+  <meta property="og:title" content="Kabir Virk" />
+  <meta property="og:description" content="Electrical Engineering (Co-op) at the University of Waterloo — PCB design and embedded systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.kabirvirk.me/" />
+
+  <link rel="icon" type="image/png" href="../../images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../../images/favicon.svg" />
+  <link rel="shortcut icon" href="../../images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-touch-icon.png" />
+  <link rel="manifest" href="../../images/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&amp;family=Barlow+Condensed:wght@300;400;500;600&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Sans+Runic&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar" id="topbar">
+  <div class="shell topbar-inner">
+    <a class="wordmark" href="#top">Kabir Virk</a>
+
+    <nav class="topnav" id="topnav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#personal">Personal</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <span class="topbar-glyphs" aria-hidden="true">ᛉ</span>
+
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></g>
+      </svg>
+    </button>
+  </div>
+  <div class="compass" aria-hidden="true">
+    <div class="compass-track" id="compass-track"></div>
+    <span class="compass-needle"></span>
+  </div>
+</header>
+
+<canvas class="snow" id="snow" aria-hidden="true"></canvas>
+<div class="fog fog-a" aria-hidden="true"></div>
+<div class="fog fog-b" aria-hidden="true"></div>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <svg class="mountains" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="mtn-far" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#3a4250" stop-opacity="0.55"/>
+          <stop offset="1" stop-color="#15171c" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="mtn-near" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#262b34"/>
+          <stop offset="1" stop-color="#15171c"/>
+        </linearGradient>
+        <linearGradient id="mtn-snow" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#e9eef5" stop-opacity="0.55"/>
+          <stop offset="1" stop-color="#e9eef5" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path fill="url(#mtn-far)" d="M0 230 L120 150 L200 190 L330 70 L430 170 L520 120 L640 200 L760 60 L880 160 L990 110 L1110 190 L1230 90 L1340 170 L1440 130 L1440 320 L0 320 Z"/>
+      <path fill="url(#mtn-snow)" d="M330 70 L362 102 L345 98 L330 112 L312 100 L300 104 Z M760 60 L796 96 L778 92 L760 108 L742 94 L728 98 Z M1230 90 L1262 120 L1246 116 L1230 130 L1214 118 L1202 122 Z"/>
+      <path fill="url(#mtn-near)" d="M0 290 L90 230 L180 260 L300 180 L410 250 L540 200 L660 270 L790 190 L920 250 L1040 210 L1170 270 L1300 220 L1440 260 L1440 320 L0 320 Z"/>
+    </svg>
+    <div class="shell hero-grid">
+      <div>
+        <p class="hero-eyebrow">University of Waterloo — Electrical Engineering (Co-op)</p>
+        <h1 class="hero-name">Kabir Virk</h1>
+        <div class="hero-runes" aria-hidden="true">ᛉ</div>
+        <div class="hero-rule" aria-hidden="true"></div>
+        <p class="hero-tagline">I'm an Electrical Engineering student at Waterloo focused on PCB design and embedded systems.</p>
+        <div class="hero-btns">
+          <a class="btn btn-solid" href="#projects">Projects</a>
+          <a class="btn btn-line" href="#contact">Contact</a>
+          <a class="btn btn-line" href="https://drive.google.com/file/d/1NVRbMFcc0rS-0azV-CsoJZhcbFdvMBlc/view?usp=sharing" target="_blank" rel="noopener">Résumé</a>
+        </div>
+      </div>
+
+      <figure class="hero-figure parallax" data-speed="-0.06">
+        <img src="../../images/PCBldo.png" alt="LDO voltage regulator PCB in Altium Designer" width="900" height="675" />
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="shell about-wrap">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">About</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᛗ</span>
+      </div>
+
+      <div class="prose reveal">
+        <p>
+          Right now that looks like laying out boards in Altium with WARG, writing firmware in
+          C/C++ for Arduino and ESP32 projects, and building the habits around schematic review
+          and documentation that make hardware actually ship.
+        </p>
+        <p>
+          Outside of engineering, I've worked in tutoring and a health-tech startup, which mostly
+          taught me how to communicate clearly and move fast in environments with a lot of
+          ambiguity. Still working on the rest.
+        </p>
+      </div>
+
+      <div class="about-tags reveal">
+        <p class="block-label">Focus</p>
+        <ul class="pills"><li>PCB Design</li><li>Embedded Systems</li><li>Firmware</li><li>RF</li></ul>
+        <p class="block-label">Tools</p>
+        <ul class="pills"><li>Altium Designer</li><li>C / C++</li><li>Python</li><li>Arduino · ESP32</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="education">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Education</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᚨ</span>
+      </div>
+
+      <div class="edu-grid">
+        <article class="edu-card reveal">
+          <div>
+            <h3 class="edu-school">University of Waterloo</h3>
+            <p class="edu-place">Waterloo, ON</p>
+            <p class="edu-degree">BASc, Electrical Engineering (Co-op)</p>
+            <p class="edu-dates">2024 — 2030</p>
+            <p class="edu-note">Expected Graduation December 2030.</p>
+            <p class="block-label">Relevant Courses</p>
+            <ul class="dotlist">
+              <li>ECE 150 — Programming</li>
+              <li>ECE 124 — Digital Circuits</li>
+              <li>ECE 140 — Linear Circuits</li>
+              <li>ECE 198 — Project Studio</li>
+            </ul>
+          </div>
+          <span class="edu-crest runes" aria-hidden="true">ᚹ</span>
+        </article>
+
+        <article class="edu-card reveal">
+          <div>
+            <h3 class="edu-school">Harold M. Braithwaite Secondary School</h3>
+            <p class="edu-place">Brampton, ON</p>
+            <p class="edu-degree">Ontario Secondary School Diploma</p>
+            <p class="edu-dates">2020 — 2024</p>
+            <ul class="dotlist">
+              <li>Coding Club · Robotics Club</li>
+              <li>Royal Canadian Air Cadets</li>
+              <li>Model UN</li>
+            </ul>
+          </div>
+          <span class="edu-crest runes" aria-hidden="true">ᛒ</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Experience</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᚱ</span>
+      </div>
+
+      <ol class="xp-list">
+        <li class="xp-item reveal">
+          <h3 class="xp-role">Waterloo Aerial Robotics Group — Electrical</h3>
+          <p class="xp-place">Waterloo, ON</p>
+          <p class="xp-dates">Apr 2026 — Present</p>
+          <p class="xp-summary">Contributing to electrical design on competition UAVs for the AEAC Student Competition.</p>
+          <ul class="dotlist">
+            <li>Designed and laid out an LDO voltage regulator PCB in Altium Designer for an onboarding project</li>
+            <li>Applied industry-standard component selection and layout practices</li>
+            <li>Reviewed schematics and maintained electrical design documentation</li>
+          </ul>
+          <ul class="pills"><li>Altium Designer</li><li>Schematic Design</li><li>Routing</li><li>Documentation</li></ul>
+        </li>
+
+        <li class="xp-item reveal">
+          <h3 class="xp-role">TalkToMedi — Systems Integration Intern</h3>
+          <p class="xp-place">Waterloo, ON · WEAccelerate</p>
+          <p class="xp-dates">Jan — Apr 2026</p>
+          <p class="xp-summary">Selected after earning two Microsoft Azure certifications in the WEAccelerate program. Focused on data tooling and workflow automation for clinic outreach.</p>
+          <ul class="dotlist">
+            <li>Built a web scraper retrieving 1,000+ clinic records in under two minutes</li>
+            <li>Automated social media scheduling workflow in n8n</li>
+            <li>Tested and refined a conversational AI voice agent using Vapi</li>
+          </ul>
+          <ul class="pills"><li>Azure</li><li>n8n</li><li>Vapi</li><li>Cursor</li></ul>
+        </li>
+
+        <li class="xp-item reveal">
+          <h3 class="xp-role">Tutorax Inc. — Academic Tutor</h3>
+          <p class="xp-place">Toronto, ON</p>
+          <p class="xp-dates">Sep 2024 — Jan 2026</p>
+          <p class="xp-summary">One-on-one and small group tutoring across Math and Science subjects.</p>
+          <ul class="dotlist">
+            <li>Tutored 20+ students with tailored lesson plans and practice tests</li>
+            <li>83% client return rate after the first session</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Projects</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᚲ</span>
+      </div>
+
+      <div class="proj-grid">
+        <article class="proj reveal">
+          <h3 class="proj-title">LDO Voltage Regulator PCB</h3>
+          <figure class="shot">
+            <img class="zoomable" src="../../images/PCBldo.png" alt="LDO voltage regulator PCB in Altium Designer" width="900" height="562" loading="lazy" />
+            <figcaption>LDO Voltage Regulator PCB</figcaption>
+          </figure>
+          <ul class="pills"><li>Altium Designer</li><li>PCB Design</li><li>Schematic Design</li><li>Documentation</li></ul>
+          <p class="block-label">What</p>
+          <p>Custom LDO regulator PCB for WARG's electrical onboarding bootcamp.</p>
+          <p class="block-label">How</p>
+          <p>Full design flow in Altium: schematic, custom symbols, footprints, placement, routing, and DRC.</p>
+          <p class="block-label">Result</p>
+          <p>Manufacturable board with zero DRC violations; DC bias verified with Murata SimSurface.</p>
+        </article>
+        <article class="proj reveal">
+          <h3 class="proj-title">SerialScope</h3>
+          <figure class="shot">
+            <img class="zoomable" src="../../images/SerialScope.png" alt="SerialScope web dashboard" width="900" height="562" loading="lazy" />
+            <figcaption>SerialScope</figcaption>
+          </figure>
+          <ul class="pills"><li>Python</li><li>FastAPI</li><li>HTML/CSS/JavaScript</li><li>Arduino</li><li>ESP32</li><li>STM32</li></ul>
+          <p class="block-label">What</p>
+          <p>Web dashboard for breadboard hardware projects.</p>
+          <p class="block-label">How</p>
+          <p>FastAPI backend over WebSockets; plain HTML/CSS/JS frontend; Arduino C++ firmware.</p>
+          <p class="block-label">Result</p>
+          <p>Live oscilloscope, I²C scanner, and interactive pinout for Uno, ESP32, and STM32.</p>
+        </article>
+        <article class="proj reveal">
+          <h3 class="proj-title">Arduino Radio Controlled Car</h3>
+          <figure class="shot">
+            <img class="zoomable" src="../../images/Radio.jpeg" alt="Arduino radio controlled car" width="900" height="562" loading="lazy" />
+            <figcaption>Arduino Radio Controlled Car</figcaption>
+          </figure>
+          <ul class="pills"><li>Arduino</li><li>C++</li><li>RF</li><li>Soldering</li></ul>
+          <p class="block-label">What</p>
+          <p>Fully wireless RC car with joystick control.</p>
+          <p class="block-label">How</p>
+          <p>Two Arduinos + RF modules; custom C++ firmware.</p>
+          <p class="block-label">Result</p>
+          <p>Stable up to 20 m, &lt;5% packet loss, &lt;100 ms latency.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Skills</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᛋ</span>
+      </div>
+
+      <div class="con-grid">
+        <article class="con reveal">
+          <p class="con-rune" aria-hidden="true">ᚦ</p>
+          <h3 class="con-name">Smithing</h3>
+          <p class="con-sub">Hardware &amp; EDA</p>
+          <svg class="con-svg" viewBox="0 0 300 250" aria-hidden="true"><line class="con-line" x1="136" y1="39" x2="209" y2="50"/><line class="con-line" x1="209" y1="50" x2="235" y2="108"/><line class="con-line" x1="235" y1="108" x2="270" y2="132"/><line class="con-line" x1="270" y1="132" x2="215" y2="181"/><line class="con-line" x1="215" y1="181" x2="124" y2="206"/><line class="con-line" x1="124" y1="206" x2="75" y2="184"/><line class="con-line" x1="75" y1="184" x2="61" y2="143"/><line class="con-line" x1="61" y1="143" x2="37" y2="89"/><line class="con-line" x1="37" y1="89" x2="83" y2="49"/><line class="con-line" x1="136" y1="39" x2="124" y2="206"/><line class="con-line" x1="209" y1="50" x2="37" y2="89"/><g class="con-star" data-skill="altium-designer"><circle class="con-halo" cx="136" cy="39" r="11"/><circle class="con-dot" cx="136" cy="39" r="3.2"/></g><g class="con-star" data-skill="quartus"><circle class="con-halo" cx="209" cy="50" r="11"/><circle class="con-dot" cx="209" cy="50" r="3.2"/></g><g class="con-star" data-skill="arduino"><circle class="con-halo" cx="235" cy="108" r="11"/><circle class="con-dot" cx="235" cy="108" r="3.2"/></g><g class="con-star" data-skill="esp32"><circle class="con-halo" cx="270" cy="132" r="11"/><circle class="con-dot" cx="270" cy="132" r="3.2"/></g><g class="con-star" data-skill="flipper-zero"><circle class="con-halo" cx="215" cy="181" r="11"/><circle class="con-dot" cx="215" cy="181" r="3.2"/></g><g class="con-star" data-skill="oscilloscope"><circle class="con-halo" cx="124" cy="206" r="11"/><circle class="con-dot" cx="124" cy="206" r="3.2"/></g><g class="con-star" data-skill="dc-power-supply"><circle class="con-halo" cx="75" cy="184" r="11"/><circle class="con-dot" cx="75" cy="184" r="3.2"/></g><g class="con-star" data-skill="multimeter"><circle class="con-halo" cx="61" cy="143" r="11"/><circle class="con-dot" cx="61" cy="143" r="3.2"/></g><g class="con-star" data-skill="soldering"><circle class="con-halo" cx="37" cy="89" r="11"/><circle class="con-dot" cx="37" cy="89" r="3.2"/></g><g class="con-star" data-skill="wiring"><circle class="con-halo" cx="83" cy="49" r="11"/><circle class="con-dot" cx="83" cy="49" r="3.2"/></g></svg>
+          <ul class="con-list"><li data-skill="altium-designer" tabindex="0"><span class="cl-name">Altium Designer</span></li><li data-skill="quartus" tabindex="0"><span class="cl-name">Quartus</span></li><li data-skill="arduino" tabindex="0"><span class="cl-name">Arduino</span></li><li data-skill="esp32" tabindex="0"><span class="cl-name">ESP32</span></li><li data-skill="flipper-zero" tabindex="0"><span class="cl-name">Flipper Zero</span></li><li data-skill="oscilloscope" tabindex="0"><span class="cl-name">Oscilloscope</span></li><li data-skill="dc-power-supply" tabindex="0"><span class="cl-name">DC Power Supply</span></li><li data-skill="multimeter" tabindex="0"><span class="cl-name">Multimeter</span></li><li data-skill="soldering" tabindex="0"><span class="cl-name">Soldering</span></li><li data-skill="wiring" tabindex="0"><span class="cl-name">Wiring</span></li></ul>
+          <p class="con-note">Proficient with oscilloscopes, DC power supplies, soldering, and multimeters through ECE coursework and personal projects.</p>
+        </article>
+        <article class="con reveal">
+          <p class="con-rune" aria-hidden="true">ᛜ</p>
+          <h3 class="con-name">Alteration</h3>
+          <p class="con-sub">Languages</p>
+          <svg class="con-svg" viewBox="0 0 300 250" aria-hidden="true"><line class="con-line" x1="154" y1="42" x2="240" y2="105"/><line class="con-line" x1="240" y1="105" x2="205" y2="211"/><line class="con-line" x1="205" y1="211" x2="91" y2="181"/><line class="con-line" x1="91" y1="181" x2="56" y2="100"/><line class="con-line" x1="154" y1="42" x2="205" y2="211"/><g class="con-star" data-skill="c-c"><circle class="con-halo" cx="154" cy="42" r="11"/><circle class="con-dot" cx="154" cy="42" r="3.2"/></g><g class="con-star" data-skill="verilog"><circle class="con-halo" cx="240" cy="105" r="11"/><circle class="con-dot" cx="240" cy="105" r="3.2"/></g><g class="con-star" data-skill="python"><circle class="con-halo" cx="205" cy="211" r="11"/><circle class="con-dot" cx="205" cy="211" r="3.2"/></g><g class="con-star" data-skill="javascript"><circle class="con-halo" cx="91" cy="181" r="11"/><circle class="con-dot" cx="91" cy="181" r="3.2"/></g><g class="con-star" data-skill="html-css"><circle class="con-halo" cx="56" cy="100" r="11"/><circle class="con-dot" cx="56" cy="100" r="3.2"/></g></svg>
+          <ul class="con-list"><li data-skill="c-c" tabindex="0"><span class="cl-name">C/C++</span></li><li data-skill="verilog" tabindex="0"><span class="cl-name">Verilog</span></li><li data-skill="python" tabindex="0"><span class="cl-name">Python</span></li><li data-skill="javascript" tabindex="0"><span class="cl-name">JavaScript</span></li><li data-skill="html-css" tabindex="0"><span class="cl-name">HTML/CSS</span></li></ul>
+          <p class="con-note">MicroPython for Flipper Zero sensor logic and rapid prototyping. Bash for terminal-based projects and scripting.</p>
+        </article>
+        <article class="con reveal">
+          <p class="con-rune" aria-hidden="true">ᛟ</p>
+          <h3 class="con-name">Illusion</h3>
+          <p class="con-sub">Tools &amp; Dev</p>
+          <svg class="con-svg" viewBox="0 0 300 250" aria-hidden="true"><line class="con-line" x1="151" y1="30" x2="238" y2="92"/><line class="con-line" x1="238" y1="92" x2="258" y2="157"/><line class="con-line" x1="258" y1="157" x2="182" y2="192"/><line class="con-line" x1="182" y1="192" x2="129" y2="204"/><line class="con-line" x1="129" y1="204" x2="55" y2="133"/><line class="con-line" x1="55" y1="133" x2="73" y2="76"/><line class="con-line" x1="151" y1="30" x2="182" y2="192"/><line class="con-line" x1="238" y1="92" x2="55" y2="133"/><g class="con-star" data-skill="git"><circle class="con-halo" cx="151" cy="30" r="11"/><circle class="con-dot" cx="151" cy="30" r="3.2"/></g><g class="con-star" data-skill="github"><circle class="con-halo" cx="238" cy="92" r="11"/><circle class="con-dot" cx="238" cy="92" r="3.2"/></g><g class="con-star" data-skill="linux"><circle class="con-halo" cx="258" cy="157" r="11"/><circle class="con-dot" cx="258" cy="157" r="3.2"/></g><g class="con-star" data-skill="vs-code"><circle class="con-halo" cx="182" cy="192" r="11"/><circle class="con-dot" cx="182" cy="192" r="3.2"/></g><g class="con-star" data-skill="jetbrains"><circle class="con-halo" cx="129" cy="204" r="11"/><circle class="con-dot" cx="129" cy="204" r="3.2"/></g><g class="con-star" data-skill="cursor"><circle class="con-halo" cx="55" cy="133" r="11"/><circle class="con-dot" cx="55" cy="133" r="3.2"/></g><g class="con-star" data-skill="n8n"><circle class="con-halo" cx="73" cy="76" r="11"/><circle class="con-dot" cx="73" cy="76" r="3.2"/></g></svg>
+          <ul class="con-list"><li data-skill="git" tabindex="0"><span class="cl-name">Git</span></li><li data-skill="github" tabindex="0"><span class="cl-name">GitHub</span></li><li data-skill="linux" tabindex="0"><span class="cl-name">Linux</span></li><li data-skill="vs-code" tabindex="0"><span class="cl-name">VS Code</span></li><li data-skill="jetbrains" tabindex="0"><span class="cl-name">JetBrains</span></li><li data-skill="cursor" tabindex="0"><span class="cl-name">Cursor</span></li><li data-skill="n8n" tabindex="0"><span class="cl-name">n8n</span></li></ul>
+        </article>
+        <article class="con reveal">
+          <p class="con-rune" aria-hidden="true">ᛇ</p>
+          <h3 class="con-name">Restoration</h3>
+          <p class="con-sub">Learning Next</p>
+          <svg class="con-svg" viewBox="0 0 300 250" aria-hidden="true"><line class="con-line" x1="163" y1="29" x2="269" y2="161"/><line class="con-line" x1="269" y1="161" x2="61" y2="182"/><g class="con-star" data-skill="deeper-flipper-zero-sub-ghz-amp-mcu-bridging"><circle class="con-halo" cx="163" cy="29" r="11"/><circle class="con-dot" cx="163" cy="29" r="3.2"/></g><g class="con-star" data-skill="autocad-for-enclosure-amp-mechanical-design"><circle class="con-halo" cx="269" cy="161" r="11"/><circle class="con-dot" cx="269" cy="161" r="3.2"/></g><g class="con-star" data-skill="raspberry-pi-for-computing-heavy-projects"><circle class="con-halo" cx="61" cy="182" r="11"/><circle class="con-dot" cx="61" cy="182" r="3.2"/></g></svg>
+          <ul class="con-list"><li data-skill="deeper-flipper-zero-sub-ghz-amp-mcu-bridging" tabindex="0"><span class="cl-name">Deeper Flipper Zero, Sub-GHz &amp; MCU bridging</span></li><li data-skill="autocad-for-enclosure-amp-mechanical-design" tabindex="0"><span class="cl-name">AutoCAD for enclosure &amp; mechanical design</span></li><li data-skill="raspberry-pi-for-computing-heavy-projects" tabindex="0"><span class="cl-name">Raspberry Pi for computing heavy projects</span></li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="personal">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Personal</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᛟ</span>
+      </div>
+
+      <p class="personal-lead reveal">Coming soon — blog posts, hobbies, and more.</p>
+
+      <div class="personal-grid">
+        <a class="p-card reveal" href="about-me.html#blog">
+          <span class="p-watermark" aria-hidden="true">ᛒ</span>
+          <span class="p-kicker">Blog</span>
+          <h3 class="p-title">Looking Back on Year 1</h3>
+          <p class="p-text">Coming soon.</p>
+          <span class="p-go">Blog →</span>
+        </a>
+
+        <a class="p-card reveal" href="about-me.html#balisong">
+          <span class="p-watermark" aria-hidden="true">ᛏ</span>
+          <span class="p-kicker">Balisong</span>
+          <h3 class="p-title">Balisong Tracker</h3>
+          <ul class="p-list" id="p-balisong"></ul>
+          <span class="p-go">Tracker →</span>
+        </a>
+
+        <a class="p-card reveal" href="about-me.html#setup">
+          <span class="p-watermark" aria-hidden="true">ᛜ</span>
+          <span class="p-kicker">PC &amp; Games</span>
+          <h3 class="p-title">PC &amp; Games</h3>
+          <p class="p-text">Coming soon.</p>
+          <span class="p-go">Setup →</span>
+        </a>
+      </div>
+
+      <a class="more-link" href="about-me.html">More about me <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Contact</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᛖ</span>
+      </div>
+
+      <p class="say-hello reveal">Say hello <span class="runes" aria-hidden="true">ᛉ</span></p>
+
+      <div class="contact-grid">
+        <a class="contact-item reveal" href="mailto:kabir.virk@uwaterloo.ca">
+          <p class="contact-key">Waterloo Email</p>
+          <p class="contact-val">kabir.virk@uwaterloo.ca</p>
+        </a>
+        <a class="contact-item reveal" href="mailto:kabirvirk1206@gmail.com">
+          <p class="contact-key">Personal Email</p>
+          <p class="contact-val">kabirvirk1206@gmail.com</p>
+        </a>
+        <a class="contact-item reveal" href="https://linkedin.com/in/kabir-virk" target="_blank" rel="noopener noreferrer">
+          <p class="contact-key">LinkedIn</p>
+          <p class="contact-val">linkedin.com/in/kabir-virk</p>
+        </a>
+        <a class="contact-item reveal" href="https://github.com/kabirvirk1206" target="_blank" rel="noopener noreferrer">
+          <p class="contact-key">GitHub</p>
+          <p class="contact-val">github.com/kabirvirk1206</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="end-mark" aria-hidden="true">
+  <div class="shell"><span>Kabir Virk</span></div>
+</div>
+
+<footer class="site-foot">
+  <div class="shell foot-inner">
+    <p class="foot-copy">© Kabir Virk 2026</p>
+    <span class="foot-runes" aria-hidden="true">ᛉ</span>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Enlarged image">
+  <button class="lightbox-x" type="button" aria-label="Close">&times;</button>
+  <img src="" alt="" />
+  <p class="lightbox-cap"></p>
+</dialog>
+
+<script src="personal-data.js"></script>
+<script src="script.js"></script>
+<script src="balisong.js"></script>
+</body>
+</html>

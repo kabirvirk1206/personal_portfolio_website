@@ -1,0 +1,654 @@
+{
+ "userTricks": [
+  {
+   "trickId": "basic-open-close",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-03-22T03:56:41.739Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-22T03:56:41.739Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "horizontal-fan",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-03-22T03:56:59.271Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-22T03:56:43.856Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "reverse-fan",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-03-22T03:56:57.095Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-22T03:56:46.039Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "icepick",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-03-22T03:56:56.115Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-22T03:56:48.093Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "icepick-quick-draw",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-03-22T03:56:50.090Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-22T03:56:50.090Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "zipper",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-03-22T16:52:26.292Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-22T16:52:26.292Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "double-rollout",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-03-22T16:52:56.128Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-22T03:56:53.458Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    },
+    {
+     "date": "2026-03-22T04:11:14.674Z",
+     "from": "mastered",
+     "to": "not_started",
+     "isCreation": false
+    },
+    {
+     "date": "2026-03-22T16:52:56.128Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "pen-twirl",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-03-22T16:52:59.465Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-22T16:52:58.866Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "figure-8",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-03-22T16:53:54.128Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-22T16:53:54.128Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "latch-drop",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-03-22T16:53:56.607Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-22T16:53:56.607Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "sidekick",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-03-22T16:54:02.562Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-22T16:54:01.542Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "icepick-spin",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-03-22T16:54:15.012Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-22T16:54:15.012Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "backhand-twirl",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-03-22T16:55:02.456Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-22T16:55:02.456Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "washing-machine",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-03-22T16:55:04.422Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-22T16:55:04.422Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "invert",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-03-24T20:52:44.312Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-24T20:52:44.312Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "handle-switch",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-03-24T20:53:23.145Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-24T20:53:23.145Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "tabletop",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-03-24T20:54:28.864Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-24T20:54:28.028Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "mod-twirl",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-03-24T20:54:32.021Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-24T20:54:32.021Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "wrist-pass",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-03-24T20:54:36.692Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-24T20:54:33.613Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "quickdraw",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-03-24T21:00:44.817Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-24T21:00:44.077Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "basic-reversal",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-03-29T01:36:12.539Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-29T01:36:12.539Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "upward-swing-handle-switch",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-03-29T01:37:43.543Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-29T01:37:43.543Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "csgo-basic",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-03-29T01:38:09.184Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-29T01:37:50.948Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "transfer-loop",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-03-30T00:04:11.363Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-30T00:04:11.363Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "pickle-roll",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-03-30T00:04:13.321Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-30T00:04:13.321Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "pushover",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-03-31T16:28:57.572Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-31T16:28:57.572Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "icepick-transfer",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-03-31T22:36:57.369Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-31T16:29:54.688Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    },
+    {
+     "date": "2026-03-31T16:47:53.027Z",
+     "from": "mastered",
+     "to": "not_started",
+     "isCreation": false
+    },
+    {
+     "date": "2026-03-31T22:36:57.369Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "thumb-rollover",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-03-31T16:31:02.027Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-03-31T16:31:01.044Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "thumbs-up",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-09-08T02:59:35.551Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-04-05T00:38:47.467Z",
+     "from": "not_started",
+     "to": "practising",
+     "isCreation": false
+    },
+    {
+     "date": "2026-09-08T02:59:34.455Z",
+     "from": "practising",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "whip",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-09-08T02:59:57.143Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-09-08T02:59:57.143Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "half-orbit",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-09-08T03:00:02.459Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-09-08T03:00:01.773Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "transpose",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-09-08T03:00:10.610Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-09-08T03:00:10.610Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "full-twirl",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-09-08T03:00:13.476Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-09-08T03:00:13.476Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "extended-twirl",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-09-08T03:00:16.979Z",
+   "masteryLevel": "understood",
+   "masteryHistory": [
+    {
+     "date": "2026-09-08T03:00:16.979Z",
+     "from": "not_started",
+     "to": "understood",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "road-to-nowhere",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-09-08T03:00:19.763Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-09-08T03:00:19.763Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "shortened-fan",
+   "notes": "",
+   "isFavorite": false,
+   "lastPracticed": "2026-09-08T03:00:21.677Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-09-08T03:00:21.677Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "basic-aerial",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-09-08T03:00:24.664Z",
+   "masteryLevel": "mastered",
+   "masteryHistory": [
+    {
+     "date": "2026-09-08T03:00:23.793Z",
+     "from": "not_started",
+     "to": "mastered",
+     "isCreation": false
+    }
+   ]
+  },
+  {
+   "trickId": "horizontal-aerial",
+   "notes": "",
+   "isFavorite": true,
+   "lastPracticed": "2026-09-08T03:03:08.150Z",
+   "masteryLevel": "understood",
+   "masteryHistory": [
+    {
+     "date": "2026-09-08T03:00:26.712Z",
+     "from": "not_started",
+     "to": "understood",
+     "isCreation": false
+    },
+    {
+     "date": "2026-09-08T03:00:32.096Z",
+     "from": "understood",
+     "to": "not_started",
+     "isCreation": false
+    },
+    {
+     "date": "2026-09-08T03:03:08.150Z",
+     "from": "not_started",
+     "to": "understood",
+     "isCreation": false
+    }
+   ]
+  }
+ ],
+ "tricks": [
+  {
+   "name": "BT8B + Helix",
+   "description": "",
+   "difficulty": 2,
+   "type": "trick",
+   "resources": [],
+   "learningHands": [
+    "R"
+   ],
+   "category": "Single",
+   "imageUrl": "https://images.pexels.com/photos/1886694/pexels-photo-1886694.jpeg",
+   "folderId": "folder_1788836602952",
+   "id": "1788836624196"
+  },
+  {
+   "name": "5 Basic Openings",
+   "description": "",
+   "difficulty": 2,
+   "type": "trick",
+   "resources": [],
+   "learningHands": [
+    "R"
+   ],
+   "category": "Single",
+   "imageUrl": "https://images.pexels.com/photos/1886694/pexels-photo-1886694.jpeg",
+   "folderId": "folder_1788836602952",
+   "id": "1788836636005"
+  }
+ ],
+ "routines": [],
+ "levelInfo": {
+  "currentLevel": 13,
+  "currentXP": 75,
+  "xpForNextLevel": 458,
+  "totalXP": 2092
+ },
+ "maxStreak": 1
+}
