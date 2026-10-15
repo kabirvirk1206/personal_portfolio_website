@@ -5,13 +5,9 @@
 // balisong-backup.json — the tracker reads it directly.
 
 // LINKS — paste full URLs. Anything left blank stays hidden on the site.
-//   spotify:          your profile, e.g. https://open.spotify.com/user/xxxxxxxx
-//   spotifyPlaylist:  a playlist to embed, e.g. https://open.spotify.com/playlist/xxxxxxxx
 //   letterboxd:       your profile, e.g. https://letterboxd.com/username/
 
 const LINKS = {
-  spotify: '',
-  spotifyPlaylist: '',
   letterboxd: '',
 };
 
@@ -20,5 +16,4 @@ const LINKS = {
 // rating:        0–5 (ignored unless status is 'watched')
 
 const SHOWS = [
-  { title: 'Narcos', kind: 'Series', status: 'watching' },
 ];

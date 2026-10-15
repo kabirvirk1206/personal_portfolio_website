@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>More about me — Kabir Virk</title>
-  <meta name="description" content="Blog, balisong, shows, music, games, and more." />
+  <meta name="description" content="Blog, balisong tracker, shows and movies, and PC and games." />
 
   <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
@@ -58,7 +58,7 @@
     <div class="shell">
       <a class="btn btn-line btn-sm back-btn" href="index.html">← Back</a>
       <h1 class="page-title">More about me</h1>
-      <p class="page-sub">Blog, balisong, shows, music, games, and more.</p>
+      <p class="page-sub">The blog, my balisong progress, what I'm watching, and the PC I game on.</p>
     </div>
   </section>
 
@@ -192,60 +192,22 @@
     <div class="shell">
       <div class="sec-head reveal">
         <span class="sec-dot" aria-hidden="true"></span>
-        <h2 class="sec-title">Shows</h2>
+        <h2 class="sec-title">Shows &amp; Movies</h2>
         <span class="sec-dash" aria-hidden="true">—</span>
         <span class="sec-runes" aria-hidden="true">ᚹ</span>
       </div>
 
-      <div class="reveal">
-        <div class="now-watching" id="now-watching" hidden>
-          <span class="now-kicker">Currently watching</span>
-          <span class="now-title" id="now-watching-title"></span>
+      <div class="split reveal">
+        <div class="panel">
+          <p class="mini-label">Current shows <span class="runes" aria-hidden="true">ᛊ</span></p>
+          <p class="soon">Coming soon.</p>
         </div>
-        <div class="shows-tabs" id="shows-tabs" role="group" aria-label="Filter shows"></div>
-        <div class="split">
-          <div class="panel">
-            <p class="mini-label">Rated <span class="runes" aria-hidden="true">ᛊ</span></p>
-            <div id="shows-rated"></div>
-          </div>
-          <div class="panel">
-            <p class="mini-label">Up next <span class="runes" aria-hidden="true">ᚾ</span></p>
-            <div id="shows-want"></div>
-          </div>
-        </div>
-        <a class="btn btn-line btn-sm social-link" data-link="letterboxd" href="#" target="_blank" rel="noopener noreferrer" hidden>Letterboxd →</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="music">
-    <div class="shell">
-      <div class="sec-head reveal">
-        <span class="sec-dot" aria-hidden="true"></span>
-        <h2 class="sec-title">Songs I'm looping</h2>
-        <span class="sec-dash" aria-hidden="true">—</span>
-        <span class="sec-runes" aria-hidden="true">ᛚ</span>
-      </div>
-
-      <div class="split split-wide">
-        <div class="panel reveal">
-          <ol class="tracklist">
-            <li><span class="track-no">01</span><span class="track-name">—</span><span class="track-by">—</span></li>
-            <li><span class="track-no">02</span><span class="track-name">—</span><span class="track-by">—</span></li>
-            <li><span class="track-no">03</span><span class="track-name">—</span><span class="track-by">—</span></li>
-            <li><span class="track-no">04</span><span class="track-name">—</span><span class="track-by">—</span></li>
-            <li><span class="track-no">05</span><span class="track-name">—</span><span class="track-by">—</span></li>
-          </ol>
-          <p class="panel-note">What's been on repeat lately</p>
-        </div>
-
-        <div class="panel reveal">
-          <p class="mini-label">Playlist <span class="runes" aria-hidden="true">ᛚ</span></p>
-          <div class="spotify-embed" id="spotify-embed"></div>
-          <p class="soon" id="spotify-soon">Coming soon.</p>
-          <a class="btn btn-line btn-sm social-link" data-link="spotify" href="#" target="_blank" rel="noopener noreferrer" hidden>Spotify →</a>
+        <div class="panel">
+          <p class="mini-label">Movies <span class="runes" aria-hidden="true">ᚾ</span></p>
+          <p class="soon">Coming soon.</p>
         </div>
       </div>
+      <a class="btn btn-line btn-sm social-link" data-link="letterboxd" href="#" target="_blank" rel="noopener noreferrer" hidden>Letterboxd →</a>
     </div>
   </section>
 
@@ -261,141 +223,25 @@
       <div class="split split-wide">
         <div class="panel reveal">
           <p class="mini-label">The rig <span class="runes" aria-hidden="true">ᚷ</span></p>
-          <div class="kv-row"><span class="kv-key">CPU</span><span class="kv-val">—</span></div>
-          <div class="kv-row"><span class="kv-key">GPU</span><span class="kv-val">—</span></div>
-          <div class="kv-row"><span class="kv-key">Memory</span><span class="kv-val">—</span></div>
-          <div class="kv-row"><span class="kv-key">Storage</span><span class="kv-val">—</span></div>
-          <div class="kv-row"><span class="kv-key">Motherboard</span><span class="kv-val">—</span></div>
-          <div class="kv-row"><span class="kv-key">Cooling</span><span class="kv-val">—</span></div>
-          <div class="kv-row"><span class="kv-key">Monitor</span><span class="kv-val">—</span></div>
-          <div class="kv-row"><span class="kv-key">Keyboard</span><span class="kv-val">—</span></div>
+          <div class="kv-row"><span class="kv-key">CPU</span><span class="kv-val">AMD Ryzen 7 3700X · 8 cores / 16 threads</span></div>
+          <div class="kv-row"><span class="kv-key">CPU Cooler</span><span class="kv-val">AMD Wraith Prism RGB</span></div>
+          <div class="kv-row"><span class="kv-key">GPU</span><span class="kv-val">Gigabyte GeForce RTX 3060 Gaming OC · 12 GB</span></div>
+          <div class="kv-row"><span class="kv-key">Motherboard</span><span class="kv-val">ASUS ROG Strix B450-F Gaming</span></div>
+          <div class="kv-row"><span class="kv-key">Memory</span><span class="kv-val">48 GB Corsair Vengeance LPX DDR4 · 3200 MHz</span></div>
+          <div class="kv-row"><span class="kv-key">Storage</span><span class="kv-val">WD Black SN750 500 GB NVMe SSD</span></div>
+          <div class="kv-row"><span class="kv-key">Power Supply</span><span class="kv-val">InWin P75 750 W · 80 Plus Gold · fully modular</span></div>
+          <div class="kv-row"><span class="kv-key">Wireless</span><span class="kv-val">TP-Link Archer T5E AC1200 Wi-Fi · Bluetooth 4.2</span></div>
+          <div class="kv-row"><span class="kv-key">Case</span><span class="kv-val">be quiet! Pure Base 500 · tempered glass</span></div>
         </div>
 
         <div class="panel reveal">
-          <p class="mini-label">Playing <span class="runes" aria-hidden="true">ᛈ</span></p>
-          <p class="soon">Coming soon.</p>
+          <p class="mini-label">Currently playing <span class="runes" aria-hidden="true">ᛈ</span></p>
+          <ul class="play-list">
+            <li>For Honor</li>
+            <li>Overwatch</li>
+            <li>Valorant</li>
+          </ul>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="reading">
-    <div class="shell">
-      <div class="sec-head reveal">
-        <span class="sec-dot" aria-hidden="true"></span>
-        <h2 class="sec-title">Reading</h2>
-        <span class="sec-dash" aria-hidden="true">—</span>
-        <span class="sec-runes" aria-hidden="true">ᚨ</span>
-      </div>
-
-      <div class="split">
-        <div class="panel reveal">
-          <p class="mini-label">Read <span class="runes" aria-hidden="true">ᛞ</span></p>
-          <p class="soon">Coming soon.</p>
-        </div>
-        <div class="panel reveal">
-          <p class="mini-label">Want to read <span class="runes" aria-hidden="true">ᚾ</span></p>
-          <p class="soon">Coming soon.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="food">
-    <div class="shell">
-      <div class="sec-head reveal">
-        <span class="sec-dot" aria-hidden="true"></span>
-        <h2 class="sec-title">Food &amp; coffee</h2>
-        <span class="sec-dash" aria-hidden="true">—</span>
-        <span class="sec-runes" aria-hidden="true">ᚠ</span>
-      </div>
-
-      <div class="split">
-        <div class="panel reveal">
-          <p class="mini-label">Always coming back to <span class="runes" aria-hidden="true">ᚠ</span></p>
-          <p class="soon">Coming soon.</p>
-        </div>
-        <div class="panel reveal">
-          <p class="mini-label">Cafés <span class="runes" aria-hidden="true">ᚲ</span></p>
-          <p class="soon">Coming soon.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="colors">
-    <div class="shell">
-      <div class="sec-head reveal">
-        <span class="sec-dot" aria-hidden="true"></span>
-        <h2 class="sec-title">Colors</h2>
-        <span class="sec-dash" aria-hidden="true">—</span>
-        <span class="sec-runes" aria-hidden="true">ᛊ</span>
-      </div>
-
-      <div class="swatch-grid">
-        <div class="swatch reveal">
-          <div class="swatch-chip" style="background: #dcca9c;"></div>
-          <div class="swatch-meta">
-            <p class="swatch-name">Gold</p>
-            <p class="swatch-hex">#DCCA9C</p>
-          </div>
-        </div>
-        <div class="swatch reveal">
-          <div class="swatch-chip" style="background: #15171c;"></div>
-          <div class="swatch-meta">
-            <p class="swatch-name">Slate</p>
-            <p class="swatch-hex">#15171C</p>
-          </div>
-        </div>
-        <div class="swatch reveal">
-          <div class="swatch-chip" style="background: #ede7d9;"></div>
-          <div class="swatch-meta">
-            <p class="swatch-name">Bone</p>
-            <p class="swatch-hex">#EDE7D9</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="builds">
-    <div class="shell">
-      <div class="sec-head reveal">
-        <span class="sec-dot" aria-hidden="true"></span>
-        <h2 class="sec-title">Builds</h2>
-        <span class="sec-dash" aria-hidden="true">—</span>
-        <span class="sec-runes" aria-hidden="true">ᚷ</span>
-      </div>
-
-      <div class="gallery">
-        <figure>
-          <img class="zoomable" src="images/PCBldo.png" alt="LDO Voltage Regulator PCB" />
-          <figcaption>LDO Voltage Regulator PCB</figcaption>
-        </figure>
-        <figure>
-          <img class="zoomable" src="images/Radio.jpeg" alt="Arduino Radio Controlled Car" />
-          <figcaption>Arduino Radio Controlled Car</figcaption>
-        </figure>
-        <figure>
-          <img class="zoomable" src="images/SerialScope.png" alt="SerialScope" />
-          <figcaption>SerialScope</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="plan">
-    <div class="shell">
-      <div class="sec-head reveal">
-        <span class="sec-dot" aria-hidden="true"></span>
-        <h2 class="sec-title">Weekly plan</h2>
-        <span class="sec-dash" aria-hidden="true">—</span>
-        <span class="sec-runes" aria-hidden="true">ᛇ</span>
-      </div>
-
-      <div class="panel reveal">
-        <!-- Google Calendar: Settings → Integrate calendar → Embed code. Make the calendar public first. -->
-        <p class="soon">Coming soon.</p>
       </div>
 
       <div style="text-align: center; margin-top: 3.5rem;">

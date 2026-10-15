@@ -2192,3 +2192,25 @@ ul, ol { list-style: none; }
 }
 
 .proj-spec dd { font-size: 0.98rem; color: var(--text-2); }
+
+.play-list li {
+  position: relative;
+  padding: 0.7rem 0 0.7rem 1.3rem;
+  border-bottom: 1px solid var(--border);
+  font-family: var(--display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.play-list li:last-child { border-bottom: none; }
+
+.play-list li::before {
+  content: '◆';
+  position: absolute;
+  left: 0.1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.5rem;
+  color: var(--accent);
+}
