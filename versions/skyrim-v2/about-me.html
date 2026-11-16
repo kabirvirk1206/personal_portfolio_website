@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>More about me — Kabir Virk</title>
+  <meta name="description" content="Blog, balisong tracker, shows and movies, and PC and games." />
+
+  <link rel="icon" type="image/png" href="../../images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../../images/favicon.svg" />
+  <link rel="shortcut icon" href="../../images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&amp;family=Barlow+Condensed:wght@300;400;500;600&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Sans+Runic&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="alt">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar" id="topbar">
+  <div class="shell topbar-inner">
+    <a class="wordmark" href="index.html">Kabir Virk</a>
+
+    <nav class="topnav" id="topnav" aria-label="Sections">
+      <a href="index.html#about">About</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#personal">Personal</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <span class="topbar-glyphs" aria-hidden="true">ᛉ</span>
+
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></g>
+      </svg>
+    </button>
+  </div>
+  <div class="compass" aria-hidden="true">
+    <div class="compass-track" id="compass-track"></div>
+    <span class="compass-needle"></span>
+  </div>
+</header>
+
+<canvas class="snow" id="snow" aria-hidden="true"></canvas>
+<div class="fog fog-a" aria-hidden="true"></div>
+<div class="fog fog-b" aria-hidden="true"></div>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="shell">
+      <a class="btn btn-line btn-sm back-btn" href="index.html">← Back</a>
+      <h1 class="page-title">More about me</h1>
+      <p class="page-sub">The blog, my balisong progress, what I'm watching, and the PC I game on.</p>
+    </div>
+  </section>
+
+  <section class="section" id="blog">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Blog</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᛒ</span>
+      </div>
+
+      <div class="panel reveal">
+        <article class="blog-card">
+          <span class="blog-date">Coming soon</span>
+          <h3 class="blog-title">Looking Back on Year 1</h3>
+          <span class="tag">Draft</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="balisong">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Balisong</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᛏ</span>
+      </div>
+
+      <div class="bt" id="bt-root">
+        <div class="bt-editbar" id="bt-editbar" hidden>
+          <label class="btn btn-line btn-sm bt-file-btn">
+            Load backup file
+            <input type="file" id="bt-file" accept=".json,application/json" hidden />
+          </label>
+          <p class="bt-file-status" id="bt-file-status">Preview a balisongtricks.dev backup before publishing it.</p>
+        </div>
+
+        <div class="bt-dash reveal">
+          <div class="bt-tile bt-tile-level">
+            <p class="bt-label">Level</p>
+            <p class="bt-big" id="bt-level">1</p>
+            <div class="bt-xp"><span id="bt-xp-fill"></span></div>
+            <p class="bt-sub" id="bt-xp-text">0 XP</p>
+          </div>
+          <div class="bt-tile">
+            <p class="bt-label">Current Streak</p>
+            <p class="bt-big"><span id="bt-streak">0</span><small> days</small></p>
+            <p class="bt-sub">Best <span id="bt-best">0</span> days</p>
+          </div>
+          <div class="bt-tile">
+            <p class="bt-label">Learned</p>
+            <p class="bt-big" id="bt-learned">0</p>
+            <p class="bt-sub">tricks at Learned or above</p>
+          </div>
+          <div class="bt-tile">
+            <p class="bt-label">Mastered</p>
+            <p class="bt-big" id="bt-mastered">0</p>
+            <p class="bt-sub">tricks fully mastered</p>
+          </div>
+        </div>
+
+        <div class="bt-panels reveal">
+          <div class="bt-panel bt-panel-wide">
+            <p class="bt-label">Mastery Progress</p>
+            <div class="bt-mbar" id="bt-mastery-bar"></div>
+            <div class="bt-mkey" id="bt-mastery-key"></div>
+          </div>
+          <div class="bt-panel">
+            <p class="bt-label">Difficulty Distribution</p>
+            <div class="bt-dist" id="bt-diff-dist"></div>
+          </div>
+          <div class="bt-panel bt-challenge" id="bt-challenge"></div>
+          <div class="bt-panel bt-panel-wide">
+            <p class="bt-label">Activity · last 26 weeks</p>
+            <div class="bt-heat" id="bt-heatmap"></div>
+          </div>
+          <div class="bt-panel bt-panel-wide">
+            <p class="bt-label">Achievements</p>
+            <div class="bt-achs" id="bt-achievements"></div>
+          </div>
+        </div>
+
+        <div class="bt-library">
+          <div class="bt-lib-head">
+            <h3 class="bt-lib-title">Tricks Library</h3>
+            <p class="bt-source" id="bt-source"></p>
+          </div>
+
+          <div class="bt-chips bt-tabs" id="bt-tabs" role="group" aria-label="Tricks or combos"></div>
+
+          <div class="bt-controls">
+            <label class="bt-search">
+              <span class="runes" aria-hidden="true">ᛉ</span>
+              <input type="search" id="bt-search" placeholder="Search tricks..." aria-label="Search tricks" />
+            </label>
+            <label class="bt-sort">
+              <span>Sort by</span>
+              <select id="bt-sort">
+                <option value="difficulty">Difficulty</option>
+                <option value="mastery">Mastery</option>
+                <option value="name">Name</option>
+              </select>
+            </label>
+            <button class="bt-chip" id="bt-favorites" type="button" aria-pressed="false" hidden>★ Favorites</button>
+            <button class="bt-chip" id="bt-learnable" type="button" aria-pressed="false" hidden>Learnable combos</button>
+          </div>
+
+          <div class="bt-chips" id="bt-diff" role="group" aria-label="Filter by difficulty"></div>
+          <div class="bt-chips" id="bt-mastery" role="group" aria-label="Filter by mastery"></div>
+
+          <p class="bt-count-line" id="bt-result-count"></p>
+          <div class="bt-grid" id="bt-grid"></div>
+          <p class="bt-empty" id="bt-empty" hidden>No tricks match your filters.</p>
+          <div class="bt-more-wrap"><button class="btn btn-line" id="bt-more" type="button" hidden>Show more</button></div>
+
+          <p class="bt-credit">Trick and combo library from <a href="https://balisongtricks.dev/" target="_blank" rel="noopener noreferrer">balisongtricks.dev</a>.</p>
+        </div>
+      </div>
+
+      <dialog class="bt-dialog" id="bt-dialog" aria-label="Trick details">
+        <button class="bt-dialog-x" type="button" aria-label="Close">&times;</button>
+        <div class="bt-dialog-body"></div>
+      </dialog>
+    </div>
+  </section>
+
+  <section class="section" id="shows">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">Shows &amp; Movies</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᚹ</span>
+      </div>
+
+      <div class="split reveal">
+        <div class="panel">
+          <p class="mini-label">Current shows <span class="runes" aria-hidden="true">ᛊ</span></p>
+          <p class="soon">Coming soon.</p>
+        </div>
+        <div class="panel">
+          <p class="mini-label">Movies <span class="runes" aria-hidden="true">ᚾ</span></p>
+          <p class="soon">Coming soon.</p>
+        </div>
+      </div>
+      <a class="btn btn-line btn-sm social-link" data-link="letterboxd" href="#" target="_blank" rel="noopener noreferrer" hidden>Letterboxd →</a>
+    </div>
+  </section>
+
+  <section class="section" id="setup">
+    <div class="shell">
+      <div class="sec-head reveal">
+        <span class="sec-dot" aria-hidden="true"></span>
+        <h2 class="sec-title">PC &amp; Games</h2>
+        <span class="sec-dash" aria-hidden="true">—</span>
+        <span class="sec-runes" aria-hidden="true">ᛜ</span>
+      </div>
+
+      <div class="split split-wide">
+        <div class="panel reveal">
+          <p class="mini-label">The rig <span class="runes" aria-hidden="true">ᚷ</span></p>
+          <div class="kv-row"><span class="kv-key">CPU</span><span class="kv-val">AMD Ryzen 7 3700X · 8 cores / 16 threads</span></div>
+          <div class="kv-row"><span class="kv-key">CPU Cooler</span><span class="kv-val">AMD Wraith Prism RGB</span></div>
+          <div class="kv-row"><span class="kv-key">GPU</span><span class="kv-val">Gigabyte GeForce RTX 3060 Gaming OC · 12 GB</span></div>
+          <div class="kv-row"><span class="kv-key">Motherboard</span><span class="kv-val">ASUS ROG Strix B450-F Gaming</span></div>
+          <div class="kv-row"><span class="kv-key">Memory</span><span class="kv-val">48 GB Corsair Vengeance LPX DDR4 · 3200 MHz</span></div>
+          <div class="kv-row"><span class="kv-key">Storage</span><span class="kv-val">WD Black SN750 500 GB NVMe SSD</span></div>
+          <div class="kv-row"><span class="kv-key">Power Supply</span><span class="kv-val">InWin P75 750 W · 80 Plus Gold · fully modular</span></div>
+          <div class="kv-row"><span class="kv-key">Wireless</span><span class="kv-val">TP-Link Archer T5E AC1200 Wi-Fi · Bluetooth 4.2</span></div>
+          <div class="kv-row"><span class="kv-key">Case</span><span class="kv-val">be quiet! Pure Base 500 · tempered glass</span></div>
+        </div>
+
+        <div class="panel reveal">
+          <p class="mini-label">Currently playing <span class="runes" aria-hidden="true">ᛈ</span></p>
+          <ul class="play-list">
+            <li>For Honor</li>
+            <li>Overwatch</li>
+            <li>Valorant</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3.5rem;">
+        <a class="btn btn-line" href="index.html">← Return to main page</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="end-mark" aria-hidden="true">
+  <div class="shell"><span>Kabir Virk</span></div>
+</div>
+
+<footer class="site-foot">
+  <div class="shell foot-inner">
+    <p class="foot-copy">© Kabir Virk 2026</p>
+    <span class="foot-runes" aria-hidden="true">ᛉ</span>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Enlarged image">
+  <button class="lightbox-x" type="button" aria-label="Close">&times;</button>
+  <img src="" alt="" />
+  <p class="lightbox-cap"></p>
+</dialog>
+
+<script src="personal-data.js"></script>
+<script src="balisong-data.js"></script>
+<script src="script.js"></script>
+<script src="balisong.js"></script>
+</body>
+</html>

@@ -574,7 +574,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initReveal();
   initImageReveal();
   initParallax();
-  initDiscover();
   initConstellations();
   initLightbox();
   initShows();
