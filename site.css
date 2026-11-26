@@ -493,3 +493,6 @@ html, body { overflow-x: clip; }
 .oc-stats li { display: flex; gap: 0.4rem; font-family: var(--mono); font-size: 0.72rem; }
 .oc-stats li span:last-child { color: var(--ink-2); }
 @media (max-width: 760px) { .oc-row { grid-template-columns: 1fr; } }
+.xp-now { margin-top: -0.4rem; font-family: var(--mono); font-size: 0.78rem; color: var(--ink-2); }
+.xp-now span { color: var(--green); margin-right: 0.4rem; }
+.xp-now span::before { content: "● "; }
