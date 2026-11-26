@@ -5,7 +5,7 @@
   document.documentElement.classList.add('js');
   if (reduce) { window.kvMotion = function () {}; return; }
 
-  var groups = '.grid, .xp-grid, .skills, .list, .pgrid, .res-grid, .about, .cgrid';
+  var groups = '.grid, .xp-grid, .co-list, .skills, .list, .pgrid, .res-grid, .about, .cgrid';
 
   // After an element has finished coming in, drop the reveal classes so hover effects work freely.
   function settle(el) {
@@ -68,11 +68,11 @@
     });
 
     // cursor glow + tilt
-    document.querySelectorAll('.card, .feat, .xp, .pcard, .res, .citem').forEach(function (box) {
+    document.querySelectorAll('.card, .feat, .xp, .co, .pcard, .res, .citem').forEach(function (box) {
       if (box.dataset.glow) return;
       box.dataset.glow = 1;
       box.classList.add('glow');
-      var tilt = !box.classList.contains('feat');
+      var tilt = !box.classList.contains('feat') && !box.classList.contains('co');
       box.addEventListener('pointermove', function (e) {
         var r = box.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
         box.style.setProperty('--mx', (x * 100).toFixed(1) + '%');

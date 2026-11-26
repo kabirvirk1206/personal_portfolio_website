@@ -496,3 +496,34 @@ html, body { overflow-x: clip; }
 .xp-now { margin-top: -0.4rem; font-family: var(--mono); font-size: 0.78rem; color: var(--ink-2); }
 .xp-now span { color: var(--green); margin-right: 0.4rem; }
 .xp-now span::before { content: "● "; }
+
+/* ---- experience: company blocks with a role timeline (LinkedIn style) ---- */
+.co-list { display: grid; gap: 1.1rem; }
+.co { display: grid; grid-template-columns: minmax(0, 17rem) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); padding: clamp(1.4rem, 3vw, 2.2rem); border: 1px solid var(--line); background: var(--panel); }
+.co-head { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.9rem 1rem; align-content: start; position: sticky; top: 5.5rem; align-self: start; }
+.co-mark { display: grid; place-items: center; width: 2.8rem; height: 2.8rem; border: 1px solid rgba(139, 124, 246, 0.4); background: rgba(139, 124, 246, 0.1); font-family: var(--mono); font-weight: 600; color: var(--violet-2); }
+.co-head h3 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 700; letter-spacing: -0.05em; line-height: 1; }
+.co-sub { margin-top: 0.4rem; font-size: 0.88rem; color: var(--ink-3); }
+.co-span { grid-column: 1 / -1; padding-top: 0.9rem; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-2); display: flex; justify-content: space-between; gap: 1rem; }
+.co-span span { color: var(--ink-3); }
+
+.roles { list-style: none; margin: 0; padding: 0; position: relative; display: grid; gap: 0; }
+.roles::before { content: ""; position: absolute; left: 6px; top: 0.6rem; bottom: 0.6rem; width: 1px; background: linear-gradient(var(--violet), var(--line) 35%); }
+.role { position: relative; display: grid; gap: 0.9rem; padding: 0 0 0.4rem 2.1rem; min-width: 0; }
+.role::before { content: ""; position: absolute; left: 0; top: 0.3rem; width: 13px; height: 13px; border-radius: 50%; background: var(--bg); border: 2px solid var(--ink-3); }
+.role.is-now::before { border-color: var(--green); background: var(--green); box-shadow: 0 0 0 4px rgba(74, 222, 128, 0.15), 0 0 14px rgba(74, 222, 128, 0.5); }
+.role h4 { font-family: var(--head); font-size: clamp(1.25rem, 2.5vw, 1.55rem); font-weight: 700; letter-spacing: -0.03em; margin-top: -0.5rem; }
+.role > p:not(.role-date):not(.xp-foot) { color: var(--ink-2); }
+.role-date { display: flex; align-items: center; gap: 0.7rem; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-2); }
+.now-tag { font-weight: 500; color: var(--green); border: 1px solid rgba(74, 222, 128, 0.4); padding: 0.1rem 0.45rem; letter-spacing: 0.14em; }
+.role-move { position: relative; padding: 1.1rem 0 1.4rem 2.1rem; }
+.role-move span { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--violet-2); }
+.role-move span::before { content: "↑"; font-size: 0.9rem; }
+.co:hover { border-color: rgba(139, 124, 246, 0.45); }
+.co:hover .flow span { border-color: var(--violet); }
+
+@media (max-width: 960px) {
+  .co { grid-template-columns: 1fr; }
+  .co-head { position: static; }
+}
+@media (prefers-reduced-motion: reduce) { .role.is-now::before { box-shadow: none; } }
