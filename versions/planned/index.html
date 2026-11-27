@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kabir Virk | FPGA, PCB &amp; Embedded</title>
+  <meta name="description" content="Kabir Virk, Electrical Engineering (Co-op) at the University of Waterloo. FPGA / ASIC digital design, backed by PCB design and embedded firmware." />
+
+  <meta property="og:title" content="Kabir Virk | FPGA, PCB &amp; Embedded" />
+  <meta property="og:description" content="FPGA / ASIC design · PCB design · Embedded firmware. Electrical Engineering (Co-op), University of Waterloo." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.kabirvirk.me/" />
+  <meta property="og:image" content="https://www.kabirvirk.me/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- favicon slot -->
+  <link rel="icon" type="image/png" href="../../images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../../images/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <a class="nav-name" href="#top">Kabir Virk</a>
+  <p class="nav-spy" id="spy" aria-hidden="true"><b>00</b> · <span>Home</span></p>
+  <nav class="nav-links" id="navlinks" aria-label="Sections">
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#resumes">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav-burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero wrap" id="top" data-spy="00" data-label="Home">
+    <p class="eyebrow line">Electrical Engineering (Co-op) · University of Waterloo</p>
+    <h1 class="hero-name">Kabir <span>Virk</span></h1>
+    <div class="hero-row">
+      <p class="hero-intro">FPGA / ASIC design · PCB design · Embedded firmware</p>
+      <div class="hero-meta">
+        <div class="btns">
+          <a class="btn solid" data-resume href="resumes/fpgal_V3.pdf">Resume · <span data-focus-label>FPGA / ASIC</span> <em>↓</em></a>
+          <a class="btn" href="https://github.com/kabirvirk1206" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn" href="https://linkedin.com/in/kabir-virk" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn" href="mailto:kabir.virk@uwaterloo.ca">Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="sec wrap" id="projects" data-spy="01" data-label="Projects">
+    <div class="sec-head">
+      <p class="eyebrow">Featured projects</p>
+      <h2>Featured builds.</h2>
+    </div>
+
+    <div class="focus" role="group" aria-label="Choose a focus">
+      <p class="eyebrow">View as</p>
+      <div class="focus-tabs">
+        <button type="button" data-focus="fpga" aria-pressed="true">FPGA / ASIC</button>
+        <button type="button" data-focus="embedded" aria-pressed="false">Embedded Firmware</button>
+        <button type="button" data-focus="pcb" aria-pressed="false">Hardware / PCB</button>
+      </div>
+    </div>
+
+    <div id="project-list"></div>
+  </section>
+
+  <!-- ARCHITECTURE (FPGA line art) -->
+  <section class="sec wrap board" id="arch" data-spy="02" data-label="Architecture">
+    <figure>
+      <svg viewBox="0 0 1000 360" role="img" aria-label="Architecture of the Balisong CV tracker: OV7670 camera configured over SCCB, pixel capture, colour threshold, centroid accumulators, clock domain crossing, VGA overlay">
+        <g class="la">
+          <rect x="30" y="140" width="120" height="70" rx="3"/>
+          <rect x="190" y="140" width="120" height="70" rx="3" class="acc"/>
+          <rect x="350" y="140" width="120" height="70" rx="3" class="acc"/>
+          <rect x="510" y="140" width="130" height="70" rx="3" class="acc"/>
+          <path d="M680 120V240" class="faint" stroke-dasharray="4 4"/>
+          <rect x="720" y="140" width="110" height="70" rx="3" class="acc"/>
+          <rect x="860" y="140" width="110" height="70" rx="3"/>
+          <rect x="190" y="40" width="120" height="50" rx="3"/>
+          <path d="M150 175H190M310 175H350M470 175H510M640 175H720M830 175H860M250 90V140"/>
+          <path class="pulse" d="M150 175H190M310 175H350M470 175H510M640 175H720M830 175H860"/>
+          <rect x="350" y="250" width="290" height="60" rx="3" class="faint" stroke-dasharray="4 4"/>
+        </g>
+        <g class="la-txt">
+          <text x="90" y="172">OV7670</text><text x="90" y="190" class="sm">CAMERA</text>
+          <text x="250" y="172">CAPTURE</text><text x="250" y="190" class="sm">RGB565 · PCLK</text>
+          <text x="410" y="172">THRESHOLD</text><text x="410" y="190" class="sm">PER PIXEL</text>
+          <text x="575" y="172">CENTROIDS</text><text x="575" y="190" class="sm">Σx · Σy · COUNT</text>
+          <text x="775" y="172">OVERLAY</text><text x="775" y="190" class="sm">BOXES + HUD</text>
+          <text x="915" y="172">VGA</text><text x="915" y="190" class="sm">640×480</text>
+          <text x="250" y="70">SCCB CONFIG</text>
+          <text x="495" y="285" class="sm">NO FRAMEBUFFER · REGISTERS ONLY</text>
+          <text x="680" y="110" class="sm">CDC</text>
+        </g>
+        <g class="co-txt">
+          <text x="30" y="250"><tspan class="b">CAMERA CLOCK DOMAIN</tspan></text>
+          <text x="970" y="250" text-anchor="end"><tspan class="b">25 MHz VGA DOMAIN</tspan></text>
+        </g>
+      </svg>
+      <figcaption class="board-cap">Balisong CV Tracker · architecture · in progress</figcaption>
+    </figure>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="sec wrap" id="experience" data-spy="03" data-label="Experience">
+    <div class="sec-head">
+      <p class="eyebrow">Experience</p>
+      <h2>Engineering experience.</h2>
+    </div>
+    <div id="xp-list"></div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="sec wrap" id="skills" data-spy="04" data-label="Skills">
+    <div class="sec-head">
+      <p class="eyebrow">Skills</p>
+      <h2>Technical toolkit.</h2>
+    </div>
+    <div class="skills">
+      <div class="srow rv"><h4>HDL &amp; Verification</h4><p>SystemVerilog · Verilog · cocotb · Icarus Verilog · SignalTap · TimeQuest</p><a href="#proj-balisong">Balisong CV Tracker <em>→</em></a></div>
+      <div class="srow rv"><h4>FPGA &amp; ASIC</h4><p>Intel Quartus Prime · MAX 10 (DE10-Lite) · Tiny Tapeout (SKY130)</p><a href="#proj-vga">VGA Generator <em>→</em></a></div>
+      <div class="srow rv"><h4>PCB &amp; EDA</h4><p>EasyEDA · Altium Designer · JLCPCB assembly · Schematic capture · Custom symbols &amp; footprints · 50 Ω routing · DRC · Gerbers</p><a href="#proj-shield">DE10-Lite Shield <em>→</em></a></div>
+      <div class="srow rv"><h4>Embedded</h4><p>C · C++ · STM32F401 (register level) · ESP32 · Arduino · Timers (PWM, input capture) · ADC + DMA · UART · SPI · I2C</p><a href="#proj-stm32">STM32 Actuator Bench <em>→</em></a></div>
+      <div class="srow rv"><h4>Software</h4><p>Python · WebSockets · C++ · GitHub Actions CI · JavaScript · HTML/CSS · Git · Linux</p><a href="#proj-serialscope">SerialScope <em>→</em></a></div>
+      <div class="srow rv"><h4>Lab &amp; CAD</h4><p>Logic analyzer · Oscilloscope · Multimeter · Board bring-up · SMD soldering · Calipers · AutoCAD · SolidWorks</p><a href="#proj-nfc">NFC Business Card <em>→</em></a></div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="sec wrap" id="education" data-spy="05" data-label="Education">
+    <div class="sec-head">
+      <p class="eyebrow">Education</p>
+      <h2>Education.</h2>
+    </div>
+    <div class="list edu-list">
+      <div class="row rv"><p class="row-k">Expected Dec 2030</p><div><h4>University of Waterloo</h4><p class="row-t">BASc Electrical Engineering (Co-op)</p></div><p>Relevant coursework: ECE 124 (Digital Circuits) · ECE 150 (C++ Programming) · ECE 140 (Linear Circuits) · ECE 108 (Discrete Math) · ECE 106 (Electricity &amp; Magnetism)</p></div>
+    </div>
+  </section>
+
+  <!-- RESUMES -->
+  <section class="sec wrap" id="resumes" data-spy="06" data-label="Resumes">
+    <div class="sec-head">
+      <p class="eyebrow">Resumes</p>
+      <h2>Pick a version.</h2>
+    </div>
+    <div class="res-grid">
+      <a class="res rv" href="resumes/fpgal_V3.pdf"><p class="eyebrow">FPGA / ASIC / digital</p><h3>Resume <em>↓</em></h3><p class="res-alt">Summary version: <span>fpgab_V3.pdf</span></p></a>
+      <a class="res rv" href="resumes/pcb_designl_V3.pdf"><p class="eyebrow">Hardware / PCB</p><h3>Resume <em>↓</em></h3><p class="res-alt">Summary version: <span>pcb_designb_V3.pdf</span></p></a>
+      <a class="res rv" href="resumes/embeddedl_V3.pdf"><p class="eyebrow">Embedded Firmware</p><h3>Resume <em>↓</em></h3><p class="res-alt">Summary version: <span>embeddedb_V3.pdf</span></p></a>
+    </div>
+    <p class="res-more">Summary versions (no skills list): <a href="resumes/fpgab_V3.pdf">FPGA / ASIC</a> · <a href="resumes/pcb_designb_V3.pdf">PCB Design</a> · <a href="resumes/embeddedb_V3.pdf">Embedded Firmware</a></p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="sec wrap contact" id="contact" data-spy="07" data-label="Contact">
+    <figure class="me">
+      <div class="me-ph"><span>Photo coming soon</span></div>
+      <figcaption>Brampton, ON · Waterloo, ON</figcaption>
+    </figure>
+    <div>
+      <h2>Let's build<br />something.</h2>
+      <p>Looking for FPGA, ASIC, PCB design and embedded firmware co-op roles.</p>
+      <div class="btns">
+        <a class="btn solid" href="mailto:kabir.virk@uwaterloo.ca">Email Kabir <em>→</em></a>
+        <a class="btn" data-resume href="resumes/fpgal_V3.pdf">Download resume <em>↓</em></a>
+        <a class="btn" href="https://linkedin.com/in/kabir-virk" target="_blank" rel="noopener noreferrer">View LinkedIn <em>→</em></a>
+        <a class="btn" href="https://github.com/kabirvirk1206" target="_blank" rel="noopener noreferrer">View GitHub <em>→</em></a>
+      </div>
+      <dl class="mails">
+        <div><dt>Email</dt><dd>kabir.virk@uwaterloo.ca</dd></div>
+        <div><dt>Phone</dt><dd>(905)-598-1885</dd></div>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot wrap">
+  <p>© Kabir Virk 2026</p>
+  <nav><a href="mailto:kabir.virk@uwaterloo.ca">kabir.virk@uwaterloo.ca</a><a href="https://github.com/kabirvirk1206" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://linkedin.com/in/kabir-virk" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="about-me.html">Personal</a></nav>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Enlarged image"><button type="button" class="lb-x" aria-label="Close">×</button><img alt="" /><p class="lb-cap"></p></dialog>
+<script src="motion.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
